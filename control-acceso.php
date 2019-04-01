@@ -27,13 +27,18 @@ if ($resultado = $mysqli->query("SELECT id, usuario, nivel FROM usuario WHERE us
           $_SESSION["usuario"]=$fila['usuario'];
           $_SESSION["nivel"]=$fila['nivel'];
         }
-
+        
         /* LIBERA LA MATRIZ QUE ALBERGA EL CONJUNTO DE RESULTADOS */
         $resultado->free();
         /* CIERRA LA CONEXIÓN */
         $mysqli->close();
-
-        echo "1";
+        if($_SESSION["nivel"]=="admin"){
+            echo "1";
+        }
+        if($_SESSION["nivel"]=="user"){
+            echo "2";
+        }
+       
 
     } else {
         /* LIBERA LA MATRIZ QUE ALBERGA EL CONJUNTO DE RESULTADOS */

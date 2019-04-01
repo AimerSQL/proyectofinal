@@ -12,10 +12,14 @@ $(document).ready(function () {
       }).done(function (msg) {
         if (msg == "1") {
           window.location.href = "acceso-aceptado-admin.php";
+         
+        } else if (msg == "2") {
+          window.location.href = "acceso-aceptado-user.php";
+          
+        }
+        else {
           $("#usuario").val("");
           $("#clave").val("");
-        }
-        else{
           $("#resultado").html(msg);
         }
       });
