@@ -9,7 +9,6 @@
 <body>
     <?php
         require_once ('seguridad-global1.php');
-        session_start();
     ?>
     <h1>hola 
         <?php

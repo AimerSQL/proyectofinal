@@ -4,7 +4,7 @@ if (!isset($_SESSION)) {
     session_start();
 }
 /* COMPROBACIÓN DE QUE EL USUARIO ESTÁ AUTENTIFICADO EN SU CORRESPONDIENTE NIVEL */
-if ($_SESSION["autentificado"] != "si" && $_SESSION["nivel"] != 1) {
+if ($_SESSION["autentificado"] != "si" && $_SESSION["nivel"] != "admin") {
     /* SI EL USUARIO NO ESTÁ AUTENTICADO SE LE REDIRIGE A index.php */
     header("Location: index.php");
     /* Y SE SALE DEL SCRIPT */
