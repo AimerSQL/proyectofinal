@@ -37,7 +37,7 @@
                   
                         
                         <a href="#Museos">Perfil</a>
-                        <a href="#Restaurantes">Cerrar sesión</a>
+                        <a href="#Restaurantes" id="cerrarSesion">Cerrar sesión</a>
                         
             </div>
       </div>

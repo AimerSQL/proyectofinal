@@ -2,7 +2,7 @@
 $se = "localhost";
 $us = "root";
 $co = "";
-$bd = "bd1";
+$bd = "cinopia";
 
 $mysqli = new mysqli($se, $us, $co, $bd);
 

@@ -51,3 +51,9 @@ $(document).ready(function() {
         return false;
     }); 
  });
+
+ $(document).ready(function(){
+     $("#cerrarSesion").click(function(){
+         location.href = "index.php";
+     });
+ });
