@@ -9,7 +9,15 @@
 </head>
 <body>
     <?php
+        require ('conexion.php');
         require_once ('seguridad-global2.php');
+        $mysqli->set_charset("utf8");
+        if($resultado = $mysqli->query("SELECT * FROM peliculas WHERE genero = 'Accion'")){
+          while ($fila = $resultado->fetch_assoc()) {
+               $titulo=$fila['tituloOriginal'];
+               $image=$fila['image'];
+             }
+        }
     ?>
      <header class="header">
       <div class="container logo-nav-container">
@@ -25,8 +33,6 @@
                   <a href="#comedia">Comedia</a>
                   <a href="#documentales">Documentales</a>
                   <a href="#infantil">Infantil</a>
-                  <!-- se habria hecho si hubiera dado tiempo
-                  <a href="index3.html#Denoche">De noche</a>-->
                   </div>
               </div>
           <a href="index.html" class="logo">Cinopia</a>
@@ -36,8 +42,8 @@
           <div class="navigation">
                   
                         
-                        <a href="#Museos">Perfil</a>
-                        <a href="#Restaurantes" id="cerrarSesion">Cerrar sesión</a>
+                        <a href="#">Perfil</a>
+                        <a href="#" id="cerrarSesion">Cerrar sesión</a>
                         
             </div>
       </div>
@@ -45,8 +51,32 @@
 
   <section class="main-primero" id="accion">
       <h1>ACCIÓN</h1>
-               
-          <div id="carrusel">
+      <?php
+        require ('conexion.php');
+        require_once ('seguridad-global2.php');
+        $mysqli->set_charset("utf8");
+        if($resultado = $mysqli->query("SELECT * FROM peliculas WHERE genero LIKE '%Accion%'")){
+             echo '<div id="carrusel">
+             <a href="#" class="left-arrow"><img src="img/back.png" /></a>
+             <a href="#" class="right-arrow"><img src="img/next.png" /></a>
+             <div class="carrusel">';
+             $cont = 0;
+             while ($fila = $resultado->fetch_assoc()) {
+               $titulo=$fila['tituloOriginal'];
+               $image=$fila['image'];
+               echo '<div class="product" id="product_'.$cont.'">
+               <img src="'.$image.'" class="cajas-fotos">
+               <h2>'.$titulo.'</h2>
+          </div>';
+               $cont++;
+             }
+             
+             echo '</div>';
+         
+        }
+        
+    ?>
+          <!--<div id="carrusel">
                <a href="#" class="left-arrow"><img src="img/back.png" /></a>
                <a href="#" class="right-arrow"><img src="img/next.png" /></a>
                <div class="carrusel">
@@ -81,7 +111,7 @@
                    </div>
                    
                </div>
-           </div> 
+           </div> -->
    </section>      
    
    <section class="main-primero" id="romance">
