@@ -175,3 +175,10 @@ html{
 .product {
     border:#CCCCCC 1px solid;
 }
+
+#cajaUsu{
+    width: 500px;
+    height: auto;
+    /*border: 1px solid black;*/
+    margin: 20px auto;
+}
