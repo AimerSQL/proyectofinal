@@ -10,7 +10,7 @@
 <body>
     <?php
         require ('conexion.php');
-        require_once ('seguridad-global2.php');
+        require ('seguridad-global2.php');
         $mysqli->set_charset("utf8");
         if($resultado = $mysqli->query("SELECT * FROM peliculas WHERE genero = 'Accion'")){
           while ($fila = $resultado->fetch_assoc()) {
@@ -64,8 +64,9 @@
              while ($fila = $resultado->fetch_assoc()) {
                $titulo=$fila['tituloOriginal'];
                $image=$fila['image'];
+               $id = $fila['id'];
                echo '<div class="product" id="product_'.$cont.'">
-               <img src="'.$image.'" class="cajas-fotos">
+               <a href="peliculas.php?id='.$id.'"><img src="'.$image.'" class="cajas-fotos"></a>
                <h2>'.$titulo.'</h2>
           </div>';
                $cont++;
