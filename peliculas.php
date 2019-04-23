@@ -21,12 +21,15 @@
             $sinopsis = $fila['sinopsis'];
             $trailer = $fila['trailer'];
             $image = $fila['image'];
-            echo '<div class="contenedorInfo"><div class="cajaInfo"><img src="'.$image.'"></div>';
+            echo '<div class="contenedorInfo">';
+            echo '<div class="cajaInfo"><img src="'.$image.'"></div>';
             echo '<div class="cajaInfo"><p>'.$tituloEsp.'</p>';
             echo '<p>'.$titulo.'</p>';
             echo '<p>'.$anio.'</p>';
             echo '<a href="'.$trailer.'">Video Youtube</a><br>';
-            echo '<p>'.$sinopsis.'</p></div></div>';
+            echo '<p>'.$sinopsis.'</p>';
+            echo '<input type="button" value="añadir opinión"></div>';
+            echo '</div>';
         }
 ?>
 </body>

@@ -18,16 +18,19 @@
       /* DESTRUCCIÓN DE LA SESIÓN */
       session_destroy();
       ?>
-   <div id="cajaUsu">
+      <h1 style="text-align:center">Cinopia</h1>
+      <div id="cajaUsu">
+         <div>
          <p>Usuario:</p>
-      <input type="text" id="usuario">
-      <p>Clave:</p>
-      <input type="text" id="clave"><br>
-      <input type="button" id="inisesion" value="iniciar sesión">
-      <div id="resultado">&nbsp;</div>
-      <p>Usuario: user<br>Clave: user</p><br>
-      <p>Usuario: admin<br>Clave: admin</p><br>
-   </div>
+         <input type="text" id="usuario">
+         <p>Clave:</p>
+         <input type="text" id="clave"><br>
+         <input type="button" id="inisesion" value="iniciar sesión">
+         <div id="resultado">&nbsp;</div>
+         <p>Usuario: user<br>Clave: user</p><br>
+         <p>Usuario: admin<br>Clave: admin</p><br>
+         </div>
+      </div>
   
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
