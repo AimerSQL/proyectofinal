@@ -68,7 +68,7 @@
                echo '<div class="product" id="product_'.$cont.'">
                <a href="peliculas.php?id='.$id.'"><img src="'.$image.'" class="cajas-fotos"></a>
                <h2>'.$titulo.'</h2>
-          </div>';
+                     </div>';
                $cont++;
              }
              
