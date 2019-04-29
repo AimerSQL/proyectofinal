@@ -8,10 +8,7 @@
     }
     echo $id;
    
-    }else{
-        echo "No se ha encontrado resultados";
     }
-
     $res->free();
     $mysqli->close();
 ?>

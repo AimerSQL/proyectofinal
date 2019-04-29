@@ -63,6 +63,11 @@ html{
     padding: 14px 16px;
     text-decoration: none;
 }
+.navigation input{
+    float: left;
+    height: 46px;
+    padding: 14px 16px;
+}
 
 .dropdown {
     float: left;

@@ -41,9 +41,10 @@
           <!--Navegador superior-->
           <div class="navigation">
                   
-                        <input type="text" id="peliQueBuscas"><input type="button" id="buscar" value="buscar">
-                        <a href="#">Perfil</a>
-                        <a href="#" id="cerrarSesion">Cerrar sesión</a>
+               <input type="text" id="peliQueBuscas">
+               <input type="button" id="buscar" value="buscar">
+               <a href="#">Perfil</a>
+               <a href="#" id="cerrarSesion">Cerrar sesión</a>
                         
             </div>
       </div>
