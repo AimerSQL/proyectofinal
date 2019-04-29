@@ -77,42 +77,7 @@
         }
         
     ?>
-          <!--<div id="carrusel">
-               <a href="#" class="left-arrow"><img src="img/back.png" /></a>
-               <a href="#" class="right-arrow"><img src="img/next.png" /></a>
-               <div class="carrusel">
-                   <div class="product" id="product_0">
-                        <img src="img/imagen_portadas.png" class="cajas-fotos">
-                        <h2>TITULO</h2>
-                   </div>
-                   <div class="product" id="product_1">
-                        <img src="img/imagen_portadas.png" class="cajas-fotos">
-                        <h2>TITULO</h2>
-                       
-                   </div>
-                   <div class="product" id="product_2">
-                        <img src="img/imagen_portadas.png" class="cajas-fotos">
-                        <h2>TITULO</h2>
-                   </div>
-                   <div class="product" id="product_3">
-                        <img src="img/imagen_portadas.png" class="cajas-fotos">
-                        <h2>TITULO</h2>
-                   </div>
-                   <div class="product" id="product_4">
-                        <img src="img/imagen_portadas.png" class="cajas-fotos">
-                        <h2>TITULO</h2>
-                   </div>
-                   <div class="product" id="product_5">
-                        <img src="img/imagen_portadas.png" class="cajas-fotos">
-                        <h2>TITULO</h2>
-                   </div>
-                   <div class="product" id="product_5">
-                        <img src="img/imagen_portadas.png" class="cajas-fotos">
-                        <h2>TITULO</h2>
-                   </div>
-                   
-               </div>
-           </div> -->
+          
    </section>      
    <section class="main-primero" id="romance">
       <h1>ROMANCE</h1>
@@ -143,42 +108,7 @@
         
     ?>
   
-                  
-            <!-- <div id="carrusel">
-                  <a href="#" class="left-arrow"><img src="img/back.png" /></a>
-                  <a href="#" class="right-arrow"><img src="img/next.png" /></a>
-                  <div class="carrusel">
-                      <div class="product" id="product_0">
-                           <img src="img/imagen_portadas.png" class="cajas-fotos">
-                           <h2>TITULO</h2>
-                      </div>
-                      <div class="product" id="product_0">
-                           <img src="img/imagen_portadas.png" class="cajas-fotos">
-                           <h2>TITULO</h2>
-                      </div>
-                      <div class="product" id="product_0">
-                           <img src="img/imagen_portadas.png" class="cajas-fotos">
-                           <h2>TITULO</h2>
-                      </div>
-                      <div class="product" id="product_0">
-                           <img src="img/imagen_portadas.png" class="cajas-fotos">
-                           <h2>TITULO</h2>
-                      </div>
-                      <div class="product" id="product_4">
-                           <img src="img/imagen_portadas.png" class="cajas-fotos">
-                           <h2>TITULO</h2>
-                      </div>
-                      <div class="product" id="product_5">
-                           <img src="img/imagen_portadas.png" class="cajas-fotos">
-                           <h2>TITULO</h2>
-                      </div>
-                      <div class="product" id="product_5">
-                           <img src="img/imagen_portadas.png" class="cajas-fotos">
-                           <h2>TITULO</h2>
-                      </div>
-                      
-                  </div>
-              </div> -->
+           
       </section>
          
     <section class="main-primero" id="terror">
@@ -209,44 +139,7 @@
         }
         
     ?>
-      <!--<section class="main-primero" id="terror">
-            <h1>TERROR</h1>
-                     
-                <div id="carrusel">
-                     <a href="#" class="left-arrow"><img src="img/back.png" /></a>
-                     <a href="#" class="right-arrow"><img src="img/next.png" /></a>
-                     <div class="carrusel">
-                         <div class="product" id="product_0">
-                              <img src="img/imagen_portadas.png" class="cajas-fotos">
-                              <h2>TITULO</h2>
-                         </div>
-                         <div class="product" id="product_0">
-                              <img src="img/imagen_portadas.png" class="cajas-fotos">
-                              <h2>TITULO</h2>
-                         </div>
-                         <div class="product" id="product_0">
-                              <img src="img/imagen_portadas.png" class="cajas-fotos">
-                              <h2>TITULO</h2>
-                         </div>
-                         <div class="product" id="product_0">
-                              <img src="img/imagen_portadas.png" class="cajas-fotos">
-                              <h2>TITULO</h2>
-                         </div>
-                         <div class="product" id="product_4">
-                              <img src="img/imagen_portadas.png" class="cajas-fotos">
-                              <h2>TITULO</h2>
-                         </div>
-                         <div class="product" id="product_5">
-                              <img src="img/imagen_portadas.png" class="cajas-fotos">
-                              <h2>TITULO</h2>
-                         </div>
-                         <div class="product" id="product_5">
-                              <img src="img/imagen_portadas.png" class="cajas-fotos">
-                              <h2>TITULO</h2>
-                         </div>
-                         
-                     </div>
-                 </div> -->
+     
          </section>
          <section class="main-primero" id="ficcion">
       <h1>CIENCIA FICCIÓN</h1>
@@ -276,44 +169,7 @@
         }
         
     ?>
-   <!--<section class="main-primero" id="Cficción">
-         <h1>CIENCIA FICCIÓN</h1>
-                  
-             <div id="carrusel">
-                  <a href="#" class="left-arrow"><img src="img/back.png" /></a>
-                  <a href="#" class="right-arrow"><img src="img/next.png" /></a>
-                  <div class="carrusel">
-                      <div class="product" id="product_0">
-                           <img src="img/imagen_portadas.png" class="cajas-fotos">
-                           <h2>TITULO</h2>
-                      </div>
-                      <div class="product" id="product_0">
-                           <img src="img/imagen_portadas.png" class="cajas-fotos">
-                           <h2>TITULO</h2>
-                      </div>
-                      <div class="product" id="product_0">
-                           <img src="img/imagen_portadas.png" class="cajas-fotos">
-                           <h2>TITULO</h2>
-                      </div>
-                      <div class="product" id="product_0">
-                           <img src="img/imagen_portadas.png" class="cajas-fotos">
-                           <h2>TITULO</h2>
-                      </div>
-                      <div class="product" id="product_4">
-                           <img src="img/imagen_portadas.png" class="cajas-fotos">
-                           <h2>TITULO</h2>
-                      </div>
-                      <div class="product" id="product_5">
-                           <img src="img/imagen_portadas.png" class="cajas-fotos">
-                           <h2>TITULO</h2>
-                      </div>
-                      <div class="product" id="product_5">
-                           <img src="img/imagen_portadas.png" class="cajas-fotos">
-                           <h2>TITULO</h2>
-                      </div>
-                      
-                  </div>
-              </div> -->
+  
       </section>
       
       <section class="main-primero" id="comedia">
@@ -344,44 +200,7 @@
         }
         
     ?>
-      <!--<section class="main-primero" id="comedia">
-         <h1>COMEDIA</h1>
-                  
-             <div id="carrusel">
-                  <a href="#" class="left-arrow"><img src="img/back.png" /></a>
-                  <a href="#" class="right-arrow"><img src="img/next.png" /></a>
-                  <div class="carrusel">
-                      <div class="product" id="product_0">
-                           <img src="img/imagen_portadas.png" class="cajas-fotos">
-                           <h2>TITULO</h2>
-                      </div>
-                      <div class="product" id="product_0">
-                           <img src="img/imagen_portadas.png" class="cajas-fotos">
-                           <h2>TITULO</h2>
-                      </div>
-                      <div class="product" id="product_0">
-                           <img src="img/imagen_portadas.png" class="cajas-fotos">
-                           <h2>TITULO</h2>
-                      </div>
-                      <div class="product" id="product_0">
-                           <img src="img/imagen_portadas.png" class="cajas-fotos">
-                           <h2>TITULO</h2>
-                      </div>
-                      <div class="product" id="product_4">
-                           <img src="img/imagen_portadas.png" class="cajas-fotos">
-                           <h2>TITULO</h2>
-                      </div>
-                      <div class="product" id="product_5">
-                           <img src="img/imagen_portadas.png" class="cajas-fotos">
-                           <h2>TITULO</h2>
-                      </div>
-                      <div class="product" id="product_5">
-                           <img src="img/imagen_portadas.png" class="cajas-fotos">
-                           <h2>TITULO</h2>
-                      </div>
-                      
-                  </div>
-              </div> -->
+     
       </section>
       
       <section class="main-primero" id="documentales">
@@ -412,44 +231,7 @@
         }
         
     ?>
-   <!--<section class="main-primero" id="documentales">
-         <h1>DOCUMENTALES</h1>
-                  
-             <div id="carrusel">
-                  <a href="#" class="left-arrow"><img src="img/back.png" /></a>
-                  <a href="#" class="right-arrow"><img src="img/next.png" /></a>
-                  <div class="carrusel">
-                      <div class="product" id="product_0">
-                           <img src="img/imagen_portadas.png" class="cajas-fotos">
-                           <h2>TITULO</h2>
-                      </div>
-                      <div class="product" id="product_0">
-                           <img src="img/imagen_portadas.png" class="cajas-fotos">
-                           <h2>TITULO</h2>
-                      </div>
-                      <div class="product" id="product_0">
-                           <img src="img/imagen_portadas.png" class="cajas-fotos">
-                           <h2>TITULO</h2>
-                      </div>
-                      <div class="product" id="product_0">
-                           <img src="img/imagen_portadas.png" class="cajas-fotos">
-                           <h2>TITULO</h2>
-                      </div>
-                      <div class="product" id="product_4">
-                           <img src="img/imagen_portadas.png" class="cajas-fotos">
-                           <h2>TITULO</h2>
-                      </div>
-                      <div class="product" id="product_5">
-                           <img src="img/imagen_portadas.png" class="cajas-fotos">
-                           <h2>TITULO</h2>
-                      </div>
-                      <div class="product" id="product_5">
-                           <img src="img/imagen_portadas.png" class="cajas-fotos">
-                           <h2>TITULO</h2>
-                      </div>
-                      
-                  </div>
-              </div> -->
+  
       </section>
       <section class="main-primero" id="infantil">
       <h1>INFANTIL</h1>
@@ -479,44 +261,6 @@
         }
         
     ?>
-    <!--<section class="main-primero" id="infantil">
-         <h1>INFANTIL</h1>
-                  
-             <div id="carrusel">
-                  <a href="#" class="left-arrow"><img src="img/back.png" /></a>
-                  <a href="#" class="right-arrow"><img src="img/next.png" /></a>
-                  <div class="carrusel">
-                      <div class="product" id="product_0">
-                           <img src="img/imagen_portadas.png" class="cajas-fotos">
-                           <h2>TITULO</h2>
-                      </div>
-                      <div class="product" id="product_0">
-                           <img src="img/imagen_portadas.png" class="cajas-fotos">
-                           <h2>TITULO</h2>
-                      </div>
-                      <div class="product" id="product_0">
-                           <img src="img/imagen_portadas.png" class="cajas-fotos">
-                           <h2>TITULO</h2>
-                      </div>
-                      <div class="product" id="product_0">
-                           <img src="img/imagen_portadas.png" class="cajas-fotos">
-                           <h2>TITULO</h2>
-                      </div>
-                      <div class="product" id="product_4">
-                           <img src="img/imagen_portadas.png" class="cajas-fotos">
-                           <h2>TITULO</h2>
-                      </div>
-                      <div class="product" id="product_5">
-                           <img src="img/imagen_portadas.png" class="cajas-fotos">
-                           <h2>TITULO</h2>
-                      </div>
-                      <div class="product" id="product_5">
-                           <img src="img/imagen_portadas.png" class="cajas-fotos">
-                           <h2>TITULO</h2>
-                      </div>
-                      
-                  </div>
-              </div> 
       </section>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
