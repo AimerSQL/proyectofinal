@@ -21,7 +21,7 @@
       <h1 style="text-align:center">Cinopia</h1>
       <div id="cajaUsu">
          <div>
-         <p>Usuario1:</p>
+         <p>Usuario:</p>
          <input type="text" id="usuario">
          <p>Clave:</p>
          <input type="text" id="clave"><br>
