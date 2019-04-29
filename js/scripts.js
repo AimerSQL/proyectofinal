@@ -20,7 +20,11 @@ $(document).ready(function() {
         if (current > 0) {
             current = current - 1;
         } else {
-            current = numImages - 3;
+            current = 0;
+        }
+        if(current==0){
+            $(".carrusel").animate({"left":50},600);
+            return false;
         }
  
         switch(id){
@@ -57,10 +61,12 @@ $(document).ready(function() {
  
     $('.right-arrow').on('click', function() {
         var id = $(this).attr("id");
-        if (numImages > current + 3) {
+        if (numImages > current + 2) {
             current = current+1;
         } else {
             current = 0;
+            $(".carrusel").animate({"left":50},600);
+            return false;
         }
         switch(id){
             case "1":$("#c1").animate({"left": -($('#product_'+current).position().left)}, 600);

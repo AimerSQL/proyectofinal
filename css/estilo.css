@@ -5,6 +5,7 @@
 html{
     /* Incluye por defecto la barra de desplazamiento vertical */
     overflow-y: scroll;
+    overflow-x: hidden;
     /* Evita que border y padding sumen en el ancho o alto de los elementos */
     box-sizing: border-box;
    }
@@ -155,7 +156,7 @@ html{
 }
  
 .carrusel {
-    width:4000px;
+    /*width:4000px;*/
     left:50px;
     position:relative;
     
