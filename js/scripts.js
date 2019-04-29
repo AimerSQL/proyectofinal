@@ -45,7 +45,7 @@ $(document).ready(function() {
         } else {
             current = 0;
         }
- 
+        alert(-($('#product_'+current).position().left));
         $(".carrusel").animate({"left": -($('#product_'+current).position().left)}, 600);
  
         return false;

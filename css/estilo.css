@@ -158,7 +158,8 @@ html{
     width:4000px;
     left:50px;
     position:relative;
-    
+    /*border: 1px solid black;
+    overflow: hidden;*/
 }
  
 .carrusel>div {
