@@ -56,39 +56,10 @@
         require_once ('seguridad-global2.php');
         $mysqli->set_charset("utf8");
         if($resultado = $mysqli->query("SELECT * FROM peliculas WHERE genero LIKE '%Accion%'")){
-          $cont = 0;   
-          echo '<div id="carrusel">
-             <a href="#" class="left-arrow" id="arrowl_'.$cont.'"><img src="img/back.png" /></a>
-             <a href="#" class="right-arrow" onclick=mr(this) id="arrowr_'.$cont.'"><img src="img/next.png" /></a>
-             <div class="carrusel">';   
-             while ($fila = $resultado->fetch_assoc()) {
-               $titulo=$fila['tituloOriginal'];
-               $image=$fila['image'];
-               $id = $fila['id'];
-               echo '<div class="product" id="product_'.$cont.'">
-               <a href="peliculas.php?id='.$id.'"><img src="'.$image.'" class="cajas-fotos"></a>
-               <h2>'.$titulo.'</h2>
-                     </div>';
-               $cont++;
-             }
-             
-             echo '</div>';
-         
-        }
-        
-    ?>
-   </section>      
-   <section class="main-primero" id="romance">
-      <h1>ROMANCE</h1>
-      <?php
-        require ('conexion.php');
-        require_once ('seguridad-global2.php');
-        $mysqli->set_charset("utf8");
-        if($resultado = $mysqli->query("SELECT * FROM peliculas WHERE genero LIKE '%Romance%'")){
              echo '<div id="carrusel">
-             <a href="#" class="left-arrow"><img src="img/back.png" /></a>
-             <a href="#" class="right-arrow"><img src="img/next.png" /></a>
-             <div class="carrusel">';
+             <a href="#" class="left-arrow" id="1"><img src="img/back.png" /></a>
+             <a href="#" class="right-arrow" id="1"><img src="img/next.png" /></a>
+             <div class="carrusel" id="c1">';
              $cont = 0;
              while ($fila = $resultado->fetch_assoc()) {
                $titulo=$fila['tituloOriginal'];
@@ -106,6 +77,38 @@
         }
         
     ?>
+          
+   </section>      
+   <section class="main-primero" id="romance">
+      <h1>ROMANCE</h1>
+      <?php
+        require ('conexion.php');
+        require_once ('seguridad-global2.php');
+        $mysqli->set_charset("utf8");
+        if($resultado = $mysqli->query("SELECT * FROM peliculas WHERE genero LIKE '%Romance%'")){
+             echo '<div id="carrusel">
+             <a href="#" class="left-arrow" id="2"><img src="img/back.png" /></a>
+             <a href="#" class="right-arrow" id="2"><img src="img/next.png" /></a>
+             <div class="carrusel" id="c2">';
+             $cont = 0;
+             while ($fila = $resultado->fetch_assoc()) {
+               $titulo=$fila['tituloOriginal'];
+               $image=$fila['image'];
+               $id = $fila['id'];
+               echo '<div class="product" id="product_'.$cont.'">
+               <a href="peliculas.php?id='.$id.'"><img src="'.$image.'" class="cajas-fotos"></a>
+               <h2>'.$titulo.'</h2>
+          </div>';
+               $cont++;
+             }
+             
+             echo '</div>';
+         
+        }
+        
+    ?>
+  
+           
       </section>
          
     <section class="main-primero" id="terror">
@@ -116,9 +119,9 @@
         $mysqli->set_charset("utf8");
         if($resultado = $mysqli->query("SELECT * FROM peliculas WHERE genero LIKE '%Terror%'")){
              echo '<div id="carrusel">
-             <a href="#" class="left-arrow"><img src="img/back.png" /></a>
-             <a href="#" class="right-arrow"><img src="img/next.png" /></a>
-             <div class="carrusel">';
+             <a href="#" class="left-arrow" id="3"><img src="img/back.png" /></a>
+             <a href="#" class="right-arrow" id="3"><img src="img/next.png" /></a>
+             <div class="carrusel" id="c3">';
              $cont = 0;
              while ($fila = $resultado->fetch_assoc()) {
                $titulo=$fila['tituloOriginal'];
@@ -136,8 +139,8 @@
         }
         
     ?>
+     
          </section>
-
          <section class="main-primero" id="ficcion">
       <h1>CIENCIA FICCIÓN</h1>
       <?php
@@ -146,9 +149,9 @@
         $mysqli->set_charset("utf8");
         if($resultado = $mysqli->query("SELECT * FROM peliculas WHERE genero LIKE '%Ficción%'")){
              echo '<div id="carrusel">
-             <a href="#" class="left-arrow"><img src="img/back.png" /></a>
-             <a href="#" class="right-arrow"><img src="img/next.png" /></a>
-             <div class="carrusel">';
+             <a href="#" class="left-arrow" id="4"><img src="img/back.png" /></a>
+             <a href="#" class="right-arrow" id="4"><img src="img/next.png" /></a>
+             <div class="carrusel" id="c4">';
              $cont = 0;
              while ($fila = $resultado->fetch_assoc()) {
                $titulo=$fila['tituloOriginal'];
@@ -166,6 +169,7 @@
         }
         
     ?>
+  
       </section>
       
       <section class="main-primero" id="comedia">
@@ -176,9 +180,9 @@
         $mysqli->set_charset("utf8");
         if($resultado = $mysqli->query("SELECT * FROM peliculas WHERE genero LIKE '%Comedia%'")){
              echo '<div id="carrusel">
-             <a href="#" class="left-arrow"><img src="img/back.png" /></a>
-             <a href="#" class="right-arrow"><img src="img/next.png" /></a>
-             <div class="carrusel">';
+             <a href="#" class="left-arrow" id="5"><img src="img/back.png" /></a>
+             <a href="#" class="right-arrow" id="5"><img src="img/next.png" /></a>
+             <div class="carrusel" id="c5">';
              $cont = 0;
              while ($fila = $resultado->fetch_assoc()) {
                $titulo=$fila['tituloOriginal'];
@@ -196,6 +200,7 @@
         }
         
     ?>
+     
       </section>
       
       <section class="main-primero" id="documentales">
@@ -206,9 +211,9 @@
         $mysqli->set_charset("utf8");
         if($resultado = $mysqli->query("SELECT * FROM peliculas WHERE genero LIKE '%Documental%'")){
              echo '<div id="carrusel">
-             <a href="#" class="left-arrow"><img src="img/back.png" /></a>
-             <a href="#" class="right-arrow"><img src="img/next.png" /></a>
-             <div class="carrusel">';
+             <a href="#" class="left-arrow" id="6"><img src="img/back.png" /></a>
+             <a href="#" class="right-arrow" id="6"><img src="img/next.png" /></a>
+             <div class="carrusel" id="c6">';
              $cont = 0;
              while ($fila = $resultado->fetch_assoc()) {
                $titulo=$fila['tituloOriginal'];
@@ -226,8 +231,8 @@
         }
         
     ?>
+  
       </section>
-
       <section class="main-primero" id="infantil">
       <h1>INFANTIL</h1>
       <?php
@@ -236,9 +241,9 @@
         $mysqli->set_charset("utf8");
         if($resultado = $mysqli->query("SELECT * FROM peliculas WHERE genero LIKE '%Infantil%'")){
              echo '<div id="carrusel">
-             <a href="#" class="left-arrow"><img src="img/back.png" /></a>
-             <a href="#" class="right-arrow"><img src="img/next.png" /></a>
-             <div class="carrusel">';
+             <a href="#" class="left-arrow" id="7"><img src="img/back.png" /></a>
+             <a href="#" class="right-arrow" id="7"><img src="img/next.png" /></a>
+             <div class="carrusel" id="c7">';
              $cont = 0;
              while ($fila = $resultado->fetch_assoc()) {
                $titulo=$fila['tituloOriginal'];
@@ -256,6 +261,7 @@
         }
         
     ?>
+   
       </section>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
