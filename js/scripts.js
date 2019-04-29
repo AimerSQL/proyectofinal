@@ -95,3 +95,22 @@ $(document).ready(function() {
          location.href = "index.php";
      });
  });
+
+
+ $(document).ready(function(){
+     $("#buscar").click(function(){
+         $.ajax({
+            type: "POST",
+            url: "buscarPeli.php",
+            data:{peliQueBuscas:$("#peliQueBuscas").val()}
+         }).done(function(msg){
+             if(!isNaN(msg)){
+                window.location.href = "peliculas.php?id="+msg;
+             }else{
+                alert("No se ha encontrado nigún resultado");
+             }
+            
+         })     
+         
+     });
+ });

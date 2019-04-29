@@ -31,6 +31,8 @@
             echo '<input type="button" value="añadir opinión"></div>';
             echo '</div>';
         }
+        $res->free();
+        $mysqli->close();
 ?>
 </body>
 </html>
