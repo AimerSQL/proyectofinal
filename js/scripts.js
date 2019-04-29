@@ -39,17 +39,17 @@ $(document).ready(function() {
         $(this).css('opacity','1');
     });
  
-    $('.right-arrow').on('click', function() {
+    /*$('.right-arrow').on('click', function() {
         if (numImages > current + 3) {
             current = current+1;
         } else {
             current = 0;
         }
-        alert(-($('#product_'+current).position().left));
+ 
         $(".carrusel").animate({"left": -($('#product_'+current).position().left)}, 600);
  
         return false;
-    }); 
+    }); */
  });
 
  $(document).ready(function(){
@@ -57,3 +57,16 @@ $(document).ready(function() {
          location.href = "index.php";
      });
  });
+
+
+ function mr(e){
+    $(e.id).click(function(){
+        if (numImages > current + 3) {
+            current = current+1;
+        } else {
+            current = 0;
+        }
+ 
+        $(".carrusel").animate({"left": -($('#product_'+current).position().left)}, 600);
+    });
+ }

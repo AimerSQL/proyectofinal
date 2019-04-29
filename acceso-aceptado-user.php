@@ -56,11 +56,11 @@
         require_once ('seguridad-global2.php');
         $mysqli->set_charset("utf8");
         if($resultado = $mysqli->query("SELECT * FROM peliculas WHERE genero LIKE '%Accion%'")){
-             echo '<div id="carrusel">
-             <a href="#" class="left-arrow"><img src="img/back.png" /></a>
-             <a href="#" class="right-arrow"><img src="img/next.png" /></a>
-             <div class="carrusel">';
-             $cont = 0;
+          $cont = 0;   
+          echo '<div id="carrusel">
+             <a href="#" class="left-arrow" id="arrowl_'.$cont.'"><img src="img/back.png" /></a>
+             <a href="#" class="right-arrow" onclick=mr(this) id="arrowr_'.$cont.'"><img src="img/next.png" /></a>
+             <div class="carrusel">';   
              while ($fila = $resultado->fetch_assoc()) {
                $titulo=$fila['tituloOriginal'];
                $image=$fila['image'];
