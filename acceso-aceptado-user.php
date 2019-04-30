@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Cinopia</title>
     <link href="css/estilo.css" rel="stylesheet" type="text/css"/>
+    
 </head>
 <body>
     <?php
