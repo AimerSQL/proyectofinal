@@ -162,7 +162,7 @@ html{
 }
  
 .carrusel {
-    /*width:4000px;*/
+    width:4000px;
     left:50px;
     position:relative;
     
