@@ -16,7 +16,7 @@ html{
 
 /*CABECERO ESTÁTICO*/
 .header{
-    background: rgba(3, 3, 3, 0.75);
+    background: rgba(255, 100, 28, 0.698);
     color:white;
     padding: 1rem 0;
     position: fixed;
