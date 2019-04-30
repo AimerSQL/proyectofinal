@@ -19,7 +19,11 @@ $(document).ready(function() {
         if (current > 0) {
             current = current - 1;
         } else {
-            current = numImages - 3;
+            current = 0;
+        }
+        if(current==0){
+            $(".carrusel").animate({"left":50},600);
+            return false;
         }
  
         $(".carrusel").animate({"left": -($('#product_'+current).position().left)}, 600);
@@ -40,10 +44,17 @@ $(document).ready(function() {
     });
  
     $('.right-arrow').on('click', function() {
+<<<<<<< HEAD
         if (numImages > current + 3) {
+=======
+        var id = $(this).attr("id");
+        if (numImages > current + 2) {
+>>>>>>> v2
             current = current+1;
         } else {
             current = 0;
+            $(".carrusel").animate({"left":50},600);
+            return false;
         }
  
         $(".carrusel").animate({"left": -($('#product_'+current).position().left)}, 600);
@@ -55,5 +66,24 @@ $(document).ready(function() {
  $(document).ready(function(){
      $("#cerrarSesion").click(function(){
          location.href = "index.php";
+     });
+ });
+
+
+ $(document).ready(function(){
+     $("#buscar").click(function(){
+         $.ajax({
+            type: "POST",
+            url: "buscarPeli.php",
+            data:{peliQueBuscas:$("#peliQueBuscas").val()}
+         }).done(function(msg){
+             if(!isNaN(msg)){
+                window.location.href = "peliculas.php?id="+msg;
+             }else{
+                alert("No se ha encontrado nigún resultado");
+             }
+            
+         })     
+         
      });
  });

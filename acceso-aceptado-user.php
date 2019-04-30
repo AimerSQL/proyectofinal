@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Cinopia</title>
     <link href="css/estilo.css" rel="stylesheet" type="text/css"/>
+    
 </head>
 <body>
     <?php
@@ -41,9 +42,10 @@
           <!--Navegador superior-->
           <div class="navigation">
                   
-                        
-                        <a href="#">Perfil</a>
-                        <a href="#" id="cerrarSesion">Cerrar sesión</a>
+               <input type="text" id="peliQueBuscas">
+               <input type="button" id="buscar" value="buscar">
+               <a href="#">Perfil</a>
+               <a href="#" id="cerrarSesion">Cerrar sesión</a>
                         
             </div>
       </div>

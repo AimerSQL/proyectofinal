@@ -5,6 +5,7 @@
 html{
     /* Incluye por defecto la barra de desplazamiento vertical */
     overflow-y: scroll;
+    overflow-x: hidden;
     /* Evita que border y padding sumen en el ancho o alto de los elementos */
     box-sizing: border-box;
    }
@@ -61,6 +62,12 @@ html{
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+}
+.navigation input{
+    float: left;
+    height: 46px;
+    padding: 14px 16px;
+    
 }
 
 .dropdown {

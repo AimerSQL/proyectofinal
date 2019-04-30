@@ -8,6 +8,7 @@
    <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
+<div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div>
       <?php
       /* INICIO DE SESIÓN, AUNQUE YA ESTÉ INICIADA, PARA
        * DESTRUIRLA AL CERRAR LA SESIÓN DESDE acceso-aceptado-n.php
