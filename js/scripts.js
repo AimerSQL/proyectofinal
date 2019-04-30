@@ -44,12 +44,7 @@ $(document).ready(function() {
     });
  
     $('.right-arrow').on('click', function() {
-<<<<<<< HEAD
         if (numImages > current + 3) {
-=======
-        var id = $(this).attr("id");
-        if (numImages > current + 2) {
->>>>>>> v2
             current = current+1;
         } else {
             current = 0;
