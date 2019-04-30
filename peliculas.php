@@ -26,7 +26,7 @@
             echo '<div class="cajaInfo"><p>'.$tituloEsp.'</p>';
             echo '<p>'.$titulo.'</p>';
             echo '<p>'.$anio.'</p>';
-            echo '<a href="'.$trailer.'">Video Youtube</a><br>';
+            echo '<a href="'.$trailer.'">Trailer Youtube</a><br>';
             echo '<p>'.$sinopsis.'</p>';
             echo '<input type="button" value="añadir opinión"></div>';
             echo '</div>';
