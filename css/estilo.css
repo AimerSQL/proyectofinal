@@ -16,7 +16,7 @@ html{
 
 /*CABECERO ESTÁTICO*/
 .header{
-    background: rgba(3, 3, 3, 0.75);
+    background: rgba(255, 100, 28, 0.698);
     color:white;
     padding: 1rem 0;
     position: fixed;
@@ -100,7 +100,7 @@ html{
     position: absolute;
     background-color: #f9f9f9;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(255, 134, 98, 0.514);
     z-index: 1;
 }
 
@@ -115,7 +115,7 @@ html{
 }
 
 .dropdown-content a:hover {
-    background-color: #9e9a9a
+    background-color: #ffba92
 }
 
 .show {
