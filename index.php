@@ -19,7 +19,7 @@
       /* DESTRUCCIÓN DE LA SESIÓN */
       session_destroy();
       ?>
-      <h1 style="text-align:center">Cinopia</h1>
+      <h1 style="text-align:center"><span>Cinopia</span></h1>
       <div id="cajaUsu">
          <div>
          <p>Usuario:</p>
@@ -35,5 +35,5 @@
   
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script type="text/javascript" src="funciones.js" ></script>
+<script type="text/javascript" src="js/funciones.js" ></script>
 </html>
