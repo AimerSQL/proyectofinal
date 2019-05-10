@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 10, 2019 at 01:16 PM
+-- Generation Time: May 10, 2019 at 02:16 PM
 -- Server version: 10.1.38-MariaDB
 -- PHP Version: 7.3.4
 
@@ -95,7 +95,11 @@ INSERT INTO `peliculas` (`id`, `genero`, `tituloOriginal`, `tituloEsp`, `anioEst
 (51, 'Comedia', 'La pequeña Suiza', 'La pequeña Suiza', 2019, 'https://www.youtube.com/watch?v=3qPsFDNQJGM', 'Narra las peripecias de los habitantes de un imaginario pueblo castellano enclavado en el centro del País Vasco llamado Tellería, que desea, tras 700 años de historia, pasar a ser parte del territorio vasco. Tras la negativa del gobierno, un curioso hallazgo en el santuario del pueblo originará que los osados habitantes de Tellería pidan su anexión, nada menos que a uno de los países más ricos del mundo: Suiza', ''),
 (52, 'Romance', 'Gloria Bell', 'Gloria Bell', 2019, 'https://www.youtube.com/watch?v=Ww6_QxM1b2Y', 'Una divorciada de espíritu libre (Moore) pasa los días trabajando en una oficina. Por la noche se desata bailando en las diferentes discotecas de Los Ángeles. Cuando encuentra a Arnold (Turturro), su vida cambia radicalmente al verse inmersa en un inesperado romance.', ''),
 (53, 'Documental', 'Young Picasso', 'El joven Picasso', 2019, 'https://www.youtube.com/watch?v=L3LW-dZhpCg', 'Demasiado tiempo ignorado, es el momento de mirar a los primeros años de Picasso; la crianza y el aprendizaje que le llevó a sus logros extraordinarios. Tres ciudades juegan un papel clave: Málaga, Barcelona y París. El joven Picasso visita cada uno de ellos y explora su influencia en Picasso, centrándose en obras de arte específicas de estos primeros años. La película explica así cómo este joven artista adquirió su oficio. Mirando detenidamente dos periodos claves: los llamados períodos azul y rosa.', ''),
-(54, 'infantil', 'Wonder Park', 'Wonder Park', 2019, 'https://www.youtube.com/watch?v=yQiKMgQC1i8', 'June (Brianna Denski) es una niña muy creativa que logra dar con un increíble parque de diversiones plagado de atracciones increíbles y animales parlanchines. El punto es que aunque inicialmente cree que este parque mágico fue abandonado, en realidad proviene de su imaginación y por eso es la única que podrá salvarlo de una gran amenaza. ', '');
+(54, 'infantil', 'Wonder Park', 'Wonder Park', 2019, 'https://www.youtube.com/watch?v=yQiKMgQC1i8', 'June (Brianna Denski) es una niña muy creativa que logra dar con un increíble parque de diversiones plagado de atracciones increíbles y animales parlanchines. El punto es que aunque inicialmente cree que este parque mágico fue abandonado, en realidad proviene de su imaginación y por eso es la única que podrá salvarlo de una gran amenaza. ', ''),
+(55, 'Terror', 'Us', 'Nosotros', 2019, 'https://www.youtube.com/watch?v=qJh9_0xH3mY', 'Adelaide Wilson es una mujer que vuelve al hogar de su infancia en la costa junto a su marido, Gabe, y sus dos hijos, para una idílica escapada veraniega. Después de un tenso día en la playa con sus amigos, Adelaide y su familia vuelven a la casa donde están pasando las vacaciones. Cuando cae la noche, los Wilson descubren la silueta de cuatro figuras cogidas de la mano y en pie delante de la vivienda. \"Nosotros\" enfrenta a una entrañable familia estadounidense a un enemigo tan insólito como aterrador.', ''),
+(56, 'Terror', 'Escape Room', 'Escape Room', 2019, 'https://www.youtube.com/watch?v=9C1V8XPBlkw', 'Seis desconocidos se encuentran en una habitación mortal en la que deberán usar su ingenio para sobrevivir.', ''),
+(57, 'accion', 'Mad Max', 'Mad Max', 2015, 'https://www.youtube.com/watch?v=GvsFoGIuRX4', 'Perseguido por su turbulento pasado, Mad Max cree que la mejor forma de sobrevivir es ir solo por el mundo. Sin embargo, se ve arrastrado a formar parte de un grupo que huye a través del desierto en un War Rig conducido por una Emperatriz de élite: Furiosa. Escapan de una Ciudadela tiranizada por Immortan Joe, a quien han arrebatado algo irreemplazable. Enfurecido, el Señor de la Guerra moviliza a todas sus bandas y persigue implacablemente a los rebeldes en una \"guerra de la carretera\" de altas revoluciones... Cuarta entrega de la saga post-apocalíptica que resucita la trilogía que a principios de los ochenta protagonizó Mel Gibson.', ''),
+(58, 'accion', 'Skyfall', 'Skyfall', 2012, 'https://www.youtube.com/watch?v=UbC7iRA_O3g', 'La lealtad de James Bond (Daniel Craig), el mejor agente de los servicios secretos británicos, por su superiora M (Judi Dench) se verá puesta a prueba cuando episodios del pasado de ella vuelven para atormentarla. Al mismo tiempo, el MI6 sufre un ataque, y 007 tendrá que localizar y destruir el grave peligro que representa el villano Silva (Javier Bardem). Para conseguirlo contará con la ayuda de la agente Eve (Naomie Harris). ', '');
 
 -- --------------------------------------------------------
 
@@ -142,7 +146,7 @@ ALTER TABLE `usuario`
 -- AUTO_INCREMENT for table `peliculas`
 --
 ALTER TABLE `peliculas`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=55;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=59;
 
 --
 -- AUTO_INCREMENT for table `usuario`
