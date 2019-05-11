@@ -7,7 +7,7 @@
     <title>Usuario</title>
     <link rel="stylesheet" href="css/estilo.css">
 </head>
-<body>
+<body> 
 <?php
         $id = $_GET['id'];
         require ('conexion.php');

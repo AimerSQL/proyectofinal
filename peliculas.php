@@ -12,7 +12,7 @@
     
      <header class="header">
           <a href="index.html" class="logo">Cinopia</a>
-
+ 
           
           <!--Navegador superior-->
           <div class="navigation">

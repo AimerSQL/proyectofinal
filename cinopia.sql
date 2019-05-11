@@ -100,7 +100,7 @@ INSERT INTO `peliculas` (`id`, `genero`, `tituloOriginal`, `tituloEsp`, `anioEst
 (56, 'Terror', 'Escape Room', 'Escape Room', 2019, 'https://www.youtube.com/watch?v=9C1V8XPBlkw', 'Seis desconocidos se encuentran en una habitación mortal en la que deberán usar su ingenio para sobrevivir.', ''),
 (57, 'accion', 'Mad Max', 'Mad Max', 2015, 'https://www.youtube.com/watch?v=GvsFoGIuRX4', 'Perseguido por su turbulento pasado, Mad Max cree que la mejor forma de sobrevivir es ir solo por el mundo. Sin embargo, se ve arrastrado a formar parte de un grupo que huye a través del desierto en un War Rig conducido por una Emperatriz de élite: Furiosa. Escapan de una Ciudadela tiranizada por Immortan Joe, a quien han arrebatado algo irreemplazable. Enfurecido, el Señor de la Guerra moviliza a todas sus bandas y persigue implacablemente a los rebeldes en una \"guerra de la carretera\" de altas revoluciones... Cuarta entrega de la saga post-apocalíptica que resucita la trilogía que a principios de los ochenta protagonizó Mel Gibson.', ''),
 (58, 'accion', 'Skyfall', 'Skyfall', 2012, 'https://www.youtube.com/watch?v=UbC7iRA_O3g', 'La lealtad de James Bond (Daniel Craig), el mejor agente de los servicios secretos británicos, por su superiora M (Judi Dench) se verá puesta a prueba cuando episodios del pasado de ella vuelven para atormentarla. Al mismo tiempo, el MI6 sufre un ataque, y 007 tendrá que localizar y destruir el grave peligro que representa el villano Silva (Javier Bardem). Para conseguirlo contará con la ayuda de la agente Eve (Naomie Harris). ', '');
-
+ 
 -- --------------------------------------------------------
 
 --

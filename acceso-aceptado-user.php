@@ -9,7 +9,7 @@
     
 </head>
 <body>
-    <?php
+    <?php 
         require ('conexion.php');
         require ('seguridad-global2.php');
         $mysqli->set_charset("utf8");

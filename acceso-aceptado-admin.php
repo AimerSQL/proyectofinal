@@ -38,7 +38,7 @@
                $clave=$fila['clave'];
                $nivel =$fila['nivel'];
                echo '<div><a href="usuarioInfo.php?id='.$id.'">'.$usuario.'</a><div>';
-             }
+             } 
         }
     ?>
         </section>
