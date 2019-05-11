@@ -52,7 +52,7 @@ html{
     padding:0;
     overflow: hidden;
     font-family: Arial, Helvetica, sans-serif;
-    
+    float: right;
 }
 
 .navigation a{
@@ -133,7 +133,6 @@ html{
     text-align: center;
     padding-top:10%;  
  }
-
  #carrusel {
     float:center;
     width:auto;
@@ -142,7 +141,6 @@ html{
     position:relative;
     margin-top:20px;
     margin-bottom:20px;
-    
 }
  
 #carrusel .left-arrow {
@@ -201,3 +199,4 @@ html{
     /*border: 1px solid black;*/
     margin: 20px 20px;
 }
+
