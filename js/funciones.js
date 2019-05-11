@@ -17,7 +17,7 @@ $(document).ready(function () {
           window.location.href = "acceso-aceptado-user.php";
           
         }
-        else {
+        else {  
           $("#usuario").val("");
           $("#clave").val("");
           $("#resultado").html(msg);
