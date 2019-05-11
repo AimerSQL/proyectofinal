@@ -29,7 +29,7 @@ $(document).ready(function() {
         $(".carrusel").animate({"left": -($('#product_'+current).position().left)}, 600);
  
         return false;
-    });
+    });  
  
     $('.left-arrow').on('hover', function() {
         $(this).css('opacity','0.5');
