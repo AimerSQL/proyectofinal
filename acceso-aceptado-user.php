@@ -101,7 +101,7 @@
                <a href="peliculas.php?id='.$id.'"><img src="'.$image.'" class="cajas-fotos"></a>
                <h2>'.$titulo.'</h2>
           </div>';
-               $cont++;
+               $cont++;  
              }
              
              echo '</div>';
