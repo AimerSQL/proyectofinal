@@ -26,6 +26,7 @@ html{
     z-index: 1;
  }
 
+
  .header a{
     color:white;
     text-decoration: none;
@@ -198,5 +199,48 @@ html{
 .cajaInfo{
     /*border: 1px solid black;*/
     margin: 20px 20px;
+    border:1px solid black;
 }
+
+.cajaImage{
+    border:1px solid black;
+}
+.cajaPeliculasFlex{
+    /*border: 1px solid black;*/
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+/*.logo{
+    display: block;
+    clear: both;
+}*/
+
+
+.inputPeli{
+    overflow: hidden;
+}
+@media all and (max-width:700px){
+    .inputPeli{
+        overflow: hidden;
+        clear: both;
+    }
+    .logo{
+        display: block;
+    }
+    .headerFlex{
+        margin:1rem 0;
+    }
+    .main-primero{
+        margin:195px 0;    
+      }
+    
+}
+@media all and (max-width:1100px) and (min-width:701px){
+    .main-primero{
+        margin:125px 0;    
+      }
+}
+
+
 

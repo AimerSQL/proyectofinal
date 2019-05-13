@@ -10,21 +10,24 @@
 </head>
 <body>
     
-     <header class="header">
-          <a href="index.html" class="logo">Cinopia</a>
- 
-          
-          <!--Navegador superior-->
-          <div class="navigation">
-                  
-               <input type="text" id="peliQueBuscas">
-               <input type="button" id="buscar" value="buscar">
-               <a href="#">Perfil</a>
-               <a href="#" id="cerrarSesion">Cerrar sesión</a>
-                        
-            </div>
-      </div>
-  </header>
+<header class="header">
+        
+        <a href="index.html" class="logo">Cinopia</a></div>
+        <!--Navegador superior-->
+        <div class="navigation">
+            <div class="headerFlex">
+                <div class="inputPeli">
+                    <input type="text" id="peliQueBuscas">
+                <!--boton para buscar pelis-->
+                <input type="button" id="buscar" value="buscar">
+                </div>
+                <div class="inputPeli">
+                    <a href="#">Perfil</a>
+                <a href="#" id="cerrarSesion">Cerrar sesión</a>
+                </div>     
+            </div>       
+        </div>
+</header>
         <section class="main-primero">
         <?php
         $id = $_GET['id'];
@@ -40,13 +43,16 @@
             $trailer = $fila['trailer'];
             $image = $fila['image'];
             echo '<div class="contenedorInfo">';
-            echo '<div class="cajaInfo"><img src="'.$image.'"></div>';
+
+            echo '<div class="cajaImage"><img src="'.$image.'"></div>';
+
             echo '<div class="cajaInfo"><p>'.$tituloEsp.'</p>';
             echo '<p>'.$titulo.'</p>';
             echo '<p>'.$anio.'</p>';
             echo '<a href="'.$trailer.'">Video Youtube</a><br>';
             echo '<p>'.$sinopsis.'</p>';
             echo '<input type="button" value="añadir opinión"></div>';
+
             echo '</div>';
         }
         $res->free();
