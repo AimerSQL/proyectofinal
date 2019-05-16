@@ -7,6 +7,7 @@
    <title>Iniciar Sesión</title>
    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
    <link rel="stylesheet" href="css/bootstrap.min.css">
+   <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
 <div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div>
@@ -21,19 +22,19 @@
       session_destroy();
       ?>
       <h1 style="text-align:center"><span>Cinopia</span></h1>
-      
+ <div id="cajaUsu">     
 <div class="row">
-   <div class="col-6">
-      <form action="">
+   <div class="col-12">
+      <form action="" class="login">
 
       <div class="form-group">
       <label for="">Usuario</label>
-      <input type="text" placeholder="Escribe tu usuario aquí" class="form-control" id="usuario">
+      <input type="text" placeholder="Escribe tu usuario aquí" class="form-control" id="usuario" style="width: 100%;" display: inline-block !important;>
       </div>
 
       <div class="form-group">
       <label for="">Contraseña</label>
-      <input type="text" placeholder="Escribe tu contraseña" class="form-control" id="clave">
+      <input type="text" placeholder="Escribe tu contraseña" class="form-control" id="clave" style="width: 100%;" display: inline-block !important;>
       </div>
 
       <div class="form-group">
@@ -41,9 +42,10 @@
       </div>
 
       </form>
-
+      <div id="resultado">&nbsp;</div>
    </div>
- </div>     
+ </div>   
+ </div> 
       
 
       
