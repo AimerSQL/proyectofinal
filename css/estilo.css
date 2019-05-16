@@ -183,13 +183,7 @@ html{
     border:#CCCCCC 1px solid;
 }
 
-#cajaUsu{
-    display: flex;
-    flex-direction: column;
-    /*border: 1px solid black;*/
-    align-items: center;
-    margin: 20px 20px;
-}
+
 
 .contenedorInfo{
     display: flex;
