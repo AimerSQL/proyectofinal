@@ -8,6 +8,7 @@ html{
     overflow-x: hidden;
     /* Evita que border y padding sumen en el ancho o alto de los elementos */
     box-sizing: border-box;
+    background: #f2f2f2;
    }
    /* Evita que border y padding sumen en el ancho o alto de los elementos */
    *, *:before, *:after { box-sizing: inherit; }
