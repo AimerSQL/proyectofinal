@@ -25,7 +25,6 @@
  <div id="cajaUsu">     
 <div class="row">
    <div class="col-12">
-      <form action="" class="login">
 
       <div class="form-group">
       <label for="">Usuario</label>
@@ -41,7 +40,6 @@
       <button class="btn btn-danger" id="inisesion">Iniciar sesión</button>
       </div>
 
-      </form>
       <div id="resultado">&nbsp;</div>
    </div>
  </div>   
