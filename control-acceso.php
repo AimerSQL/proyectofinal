@@ -51,6 +51,7 @@ if ($resultado = $mysqli->query("SELECT id, usuario, nivel FROM usuario WHERE us
             session_start();
         }
         /* DESTRUCCIÓN DE LA SESIÓN */
+        session_destroy();
           echo "Usuario/clave incorrecto";
     }
 }

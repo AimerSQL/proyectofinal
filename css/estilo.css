@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;   
 }
-html{
+html,body{
     /* Incluye por defecto la barra de desplazamiento vertical */
     overflow-y: scroll;
     overflow-x: hidden;
@@ -12,6 +12,7 @@ html{
    }
    /* Evita que border y padding sumen en el ancho o alto de los elementos */
    *, *:before, *:after { box-sizing: inherit; }
+   
 
 
 
@@ -222,6 +223,12 @@ html{
 .inputPeli{
     overflow: hidden;
 }
+
+
+
+
+
+
 @media all and (max-width:700px){
     .inputPeli{
         overflow: hidden;
