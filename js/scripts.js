@@ -1,9 +1,3 @@
-
-//Botón géneros
-function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
-}
-
 //Carrusel
 var current = 0;
 var imagenes = new Array();
@@ -58,16 +52,110 @@ $(document).ready(function() {
     }); 
  });
 
- $(document).ready(function(){
-     $("#cerrarSesion").click(function(){
-         location.href = "index.php";
-     });
- });
+ 
 
+ 
 
- $(document).ready(function(){
-     $("#buscar").click(function(){
+/*validacion formulario */
+$(document).ready(function(){
+    $("#enviar").attr('disabled','disabled');
+    $("#enviar").addClass("btn-danger");
+    $(".form-control").blur(function(){
+        validaForm();
+    });
+    
+    function validaForm(){
+        if($("#nombre").val()==""||$("#apellido").val()==""||$("#dni").val()==""||$("#usuarioR").val()==""||$("#contrasena").val()==""||$("#correo").val()==""){
+            $("#enviar").addClass("btn-danger");
+            $("#enviar").attr('disabled','disabled');
+        }else{
+            $("#enviar").removeAttr('disabled');
+            $("#enviar").removeClass("btn-danger").addClass("btn-primary");
+        }
+    }
+    $("#buscar").click(function(){
         const clave = $("#peliQueBuscas").val();
         window.location.href = "buscarPeli.php?clave="+clave;
  });
+
+    $("#cerrarSesion").click(function(){
+    location.href = "index.php";
+});
+
+    /*registro*/
+    $("#enviar").click(function(){
+        $.ajax({
+            type: "POST",
+            url: "registro.php",
+            data: {nombre: $("#nombre").val(), 
+            apellido: $("#apellido").val(),
+            dni: $("#dni").val(),
+            usuario: $("#usuarioR").val(),
+            contrasena: $("#contrasena").val(),
+            correo: $("#correo").val()
+            }
+        }).done(function(){
+            $("#nombre").val() = "";
+            $("#apellido").val() = "";
+            $("#dni").val() = "";
+            $("#usuarioR").val() = ""
+            $("#contrasena").val() = "";
+            $("#correo").val() = "";
+        });
+    });
+
+    /*Publicar comentario */
+    $("#pub").click(function(){
+        $.ajax({
+            type: "POST",
+            url: "publicar.php",
+            data:{
+                comentario:$("#comentario").val(),
+                peliId: $("#peliId").val()
+            }
+        }).done(function(msg){
+            $("#comentario").val("");
+            if(msg==""||msg==null){
+                location.reload();
+            }else{
+                alert(msg);
+            }     
+        });
+    });
+
+    /* mostrar ocultar formulario peliculas*/
+    $("#gestionUsu").click(function(){
+        $("#usuBox").show();
+        $("#peliForm").hide();
+    });
+    $("#subidaPeli").click(function(){
+        $("#usuBox").hide();
+        $("#peliForm").show();
+    });
+
+    /*bloquear y desbloquear*/
+    $("#bloquear").click(function(){
+        $.ajax({
+            type: "POST",
+            url: "bloquear.php",
+            data:{
+                idUsu:$("#idUsu").val()
+            }
+        }).done(function(msg){
+            alert(msg);
+        });
+    });
+    $("#desbloquear").click(function(){
+        $.ajax({
+            type: "POST",
+            url: "desbloquear.php",
+            data:{
+                idUsu:$("#idUsu").val()
+            }
+        }).done(function(msg){
+            alert(msg);
+        });
+    });
+
+
 });

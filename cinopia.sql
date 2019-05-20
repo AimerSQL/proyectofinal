@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.5
+-- version 4.8.3
 -- https://www.phpmyadmin.net/
 --
--- Servidor: 127.0.0.1
--- Tiempo de generación: 30-04-2019 a las 10:54:13
--- Versión del servidor: 10.1.38-MariaDB
--- Versión de PHP: 7.3.4
+-- 主机： 127.0.0.1
+-- 生成日期： 2019-05-19 21:18:51
+-- 服务器版本： 10.1.36-MariaDB
+-- PHP 版本： 7.2.10
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -19,13 +19,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de datos: `cinopia`
+-- 数据库： `cinopia`
 --
 
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `peliculas`
+-- 表的结构 `peliculas`
 --
 
 CREATE TABLE `peliculas` (
@@ -40,7 +40,7 @@ CREATE TABLE `peliculas` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Volcado de datos para la tabla `peliculas`
+-- 转存表中的数据 `peliculas`
 --
 
 INSERT INTO `peliculas` (`id`, `genero`, `tituloOriginal`, `tituloEsp`, `anioEstreno`, `trailer`, `sinopsis`, `image`) VALUES
@@ -86,73 +86,77 @@ INSERT INTO `peliculas` (`id`, `genero`, `tituloOriginal`, `tituloEsp`, `anioEst
 (40, 'Terror', 'Pet Samatary', 'Cementerio de animales', 2019, 'https://www.youtube.com/watch?v=ghXOVshAyvM', 'El doctor Louis Creed (Clarke) se muda con su mujer Racher (Seimetz) y sus dos hijos pequeños de Boston a un pueblecito de Maine, cerca del nuevo hogar de la familia descubrirá un terreno misterioso escondido entre los árboles. Cuando la tragedia llega, Louis hablará con su nuevo vecino, Jud Crandall (Lithgow), desencadenando una peligrosa reacción en cadena que desatará un mal de horribles consecuencias. ', 'img/pet_sematary.jpg'),
 (41, 'Terror', 'The purge', 'La purga; la noche de las bestias', 2013, ' https://www.youtube.com/watch?v=nzcgjeXc7Rc', 'Para mantener durante el resto del año la tasa de criminalidad por debajo del 1%, los Nuevos Padres Fundadores de América ponen a prueba una teoría sociológica que da rienda suelta a todo tipo de agresiones durante una noche en una comunidad aislada. Pero cuando la violencia de los opresores se encuentra con la ira de los marginados, el vandalismo explota más allá de esas fronteras “experimentales” para extenderse por todo el país. Detrás de cada tradición hay una revolución. Descubre cómo toda una nación entera abrazó una brutal celebración anual: 12 horas de impunidad criminal. Bienvenidos a un movimiento que comenzó como un simple experimento.', 'img/la purga.jpg'),
 (42, 'Terror', 'Happy death day', 'Feliz dia de tu muerte', 2017, 'https://www.youtube.com/watch?v=OPrzja0SAHk', 'Una joven estudiante universitaria (Jessica Rothe) reconstruye el día de su asesinato reviviendo tanto los detalles cotidianos como su aterrador final, hasta intentar descubrir la identidad de su asesino.', 'img/feliz dia de tu muerte.jpg'),
-(45, 'Comedia', 'The Hustle', 'Timadoras compulsivas', 2019, 'https://www.youtube.com/watch?v=AQOiWZZQXeg', 'Dos artistas del engaño, una de clase alta y la otra de los barrios bajos, deciden unirse para timar a los hombres... Remake de la comedia de 1988 \'Dirty Rotten Scoundrels\'. ', ''),
-(46, 'Ciencia Ficción', 'Pokémon Detective Pikachu', 'Pokémon Detective Pikachu', 2019, 'https://www.youtube.com/watch?v=IN1kuCo_SIc', 'Cuando el gran detective privado Harry Goodman desaparece misteriosamente; Tim, su hijo de 21 años, debe averiguar qué sucedió. En la investigación lo ayuda el antiguo compañero Pokémon de Harry, el Detective Pikachu: un super detective adorable y ocurrente que se asombra incluso a sí mismo. Tim y Pikachu se dan cuenta que increíblemente pueden comunicarse, y unen fuerzas en una aventura para develar el misterio enmarañado. Mientras buscan pistas en las calles resplandecientes de Ryme City, una vasta metrópolis moderna donde los humanos y los Pokémon comparten un mundo real hiperrealista, encuentran distintos personajes Pokémon y descubren un complot impactante que podría destruir la convivencia pacífica y amenazar a todo el universo Pokémon.', ''),
-(47, 'infantil ', 'UglyDolls', 'UglyDolls', 2019, 'https://www.youtube.com/watch?v=zMBGFWRM5z8', 'Hace muchos años, se crearon los muñecos para dar felicidad a todos los niños del mundo. Pero, ¿alguna vez te has preguntado de dónde vienen? Viven en una ciudad mágica donde todo es perfecto. Por el contrario, los UglyDolls, los muñecos de peluche imperfectos, viven en Feolandia, un mundo en el que nadie los juzga y en el que se sienten felices y protegidos. Pero...¿qué pasaría si estos dos mundos se unieran?', ''),
-(48, 'Documental', 'Leonardo. Cinquecento', 'Leonardo. Cinquecento', 2019, 'https://www.youtube.com/watch?v=8RnvTJs_lRc', '500 años después de su muerte, Leonardo sigue siendo uno de los hombres más admirados y reconocidos de la historia de la humanidad. Artista, arquitecto, humanista, naturalista y estratega militar, Leonardo Da Vinci fue, por encima de todo, un observador incansable en busca de nuevos descubrimientos. Con contribuciones de destacados expertos internacionales y un grupo de técnicos e ingenieros, este documental analiza las obras de Leonardo a través de las implicaciones modernas de su trabajo.', ''),
-(49, 'Ciencia Ficción', 'Avengers: Endgame', 'Avengers: Endgame', 2019, 'https://www.youtube.com/watch?v=1XrrTJpA3yM', 'Después de los eventos devastadores de \'Avengers: Infinity War\', el universo está en ruinas debido a las acciones de Thanos, el Titán Loco. Con la ayuda de los aliados que quedaron, los Vengadores deberán reunirse una vez más para intentar deshacer sus acciones y restaurar el orden en el universo de una vez por todas, sin importar cuáles son las consecuencias... Cuarta y última entrega de la saga \"Vengadores\". ', ''),
-(50, 'Romance', 'La primera cita', 'La primera cita', 2019, 'https://www.youtube.com/watch?v=3S6XzGHdbCk', 'Isabel, que nunca ha recibido muchas muestras de cariño y comprensión de su marido Sebastián, militar prejubilado, sufre un brote de Alzheimer. Empieza entonces a confundir a su esposo con otras personas, y es así, por accidente, que Sebastián descubre la verdad que nunca reconoció sobre su agrio carácter.', ''),
-(51, 'Comedia', 'La pequeña Suiza', 'La pequeña Suiza', 2019, 'https://www.youtube.com/watch?v=3qPsFDNQJGM', 'Narra las peripecias de los habitantes de un imaginario pueblo castellano enclavado en el centro del País Vasco llamado Tellería, que desea, tras 700 años de historia, pasar a ser parte del territorio vasco. Tras la negativa del gobierno, un curioso hallazgo en el santuario del pueblo originará que los osados habitantes de Tellería pidan su anexión, nada menos que a uno de los países más ricos del mundo: Suiza', ''),
-(52, 'Romance', 'Gloria Bell', 'Gloria Bell', 2019, 'https://www.youtube.com/watch?v=Ww6_QxM1b2Y', 'Una divorciada de espíritu libre (Moore) pasa los días trabajando en una oficina. Por la noche se desata bailando en las diferentes discotecas de Los Ángeles. Cuando encuentra a Arnold (Turturro), su vida cambia radicalmente al verse inmersa en un inesperado romance.', ''),
-(53, 'Documental', 'Young Picasso', 'El joven Picasso', 2019, 'https://www.youtube.com/watch?v=L3LW-dZhpCg', 'Demasiado tiempo ignorado, es el momento de mirar a los primeros años de Picasso; la crianza y el aprendizaje que le llevó a sus logros extraordinarios. Tres ciudades juegan un papel clave: Málaga, Barcelona y París. El joven Picasso visita cada uno de ellos y explora su influencia en Picasso, centrándose en obras de arte específicas de estos primeros años. La película explica así cómo este joven artista adquirió su oficio. Mirando detenidamente dos periodos claves: los llamados períodos azul y rosa.', ''),
-(54, 'infantil', 'Wonder Park', 'Wonder Park', 2019, 'https://www.youtube.com/watch?v=yQiKMgQC1i8', 'June (Brianna Denski) es una niña muy creativa que logra dar con un increíble parque de diversiones plagado de atracciones increíbles y animales parlanchines. El punto es que aunque inicialmente cree que este parque mágico fue abandonado, en realidad proviene de su imaginación y por eso es la única que podrá salvarlo de una gran amenaza. ', ''),
-(55, 'Terror', 'Us', 'Nosotros', 2019, 'https://www.youtube.com/watch?v=qJh9_0xH3mY', 'Adelaide Wilson es una mujer que vuelve al hogar de su infancia en la costa junto a su marido, Gabe, y sus dos hijos, para una idílica escapada veraniega. Después de un tenso día en la playa con sus amigos, Adelaide y su familia vuelven a la casa donde están pasando las vacaciones. Cuando cae la noche, los Wilson descubren la silueta de cuatro figuras cogidas de la mano y en pie delante de la vivienda. \"Nosotros\" enfrenta a una entrañable familia estadounidense a un enemigo tan insólito como aterrador.', ''),
-(56, 'Terror', 'Escape Room', 'Escape Room', 2019, 'https://www.youtube.com/watch?v=9C1V8XPBlkw', 'Seis desconocidos se encuentran en una habitación mortal en la que deberán usar su ingenio para sobrevivir.', ''),
-(57, 'accion', 'Mad Max', 'Mad Max', 2015, 'https://www.youtube.com/watch?v=GvsFoGIuRX4', 'Perseguido por su turbulento pasado, Mad Max cree que la mejor forma de sobrevivir es ir solo por el mundo. Sin embargo, se ve arrastrado a formar parte de un grupo que huye a través del desierto en un War Rig conducido por una Emperatriz de élite: Furiosa. Escapan de una Ciudadela tiranizada por Immortan Joe, a quien han arrebatado algo irreemplazable. Enfurecido, el Señor de la Guerra moviliza a todas sus bandas y persigue implacablemente a los rebeldes en una \"guerra de la carretera\" de altas revoluciones... Cuarta entrega de la saga post-apocalíptica que resucita la trilogía que a principios de los ochenta protagonizó Mel Gibson.', ''),
-(58, 'accion', 'Skyfall', 'Skyfall', 2012, 'https://www.youtube.com/watch?v=UbC7iRA_O3g', 'La lealtad de James Bond (Daniel Craig), el mejor agente de los servicios secretos británicos, por su superiora M (Judi Dench) se verá puesta a prueba cuando episodios del pasado de ella vuelven para atormentarla. Al mismo tiempo, el MI6 sufre un ataque, y 007 tendrá que localizar y destruir el grave peligro que representa el villano Silva (Javier Bardem). Para conseguirlo contará con la ayuda de la agente Eve (Naomie Harris). ', '');
- 
+(45, 'Comedia', 'The Hustle', 'Timadoras compulsivas', 2019, 'https://www.youtube.com/watch?v=AQOiWZZQXeg', 'Dos artistas del engaño, una de clase alta y la otra de los barrios bajos, deciden unirse para timar a los hombres... Remake de la comedia de 1988 \'Dirty Rotten Scoundrels\'. ', 'img/the hustle.jpg'),
+(46, 'Ciencia Ficción', 'Pokémon Detective Pikachu', 'Pokémon Detective Pikachu', 2019, 'https://www.youtube.com/watch?v=IN1kuCo_SIc', 'Cuando el gran detective privado Harry Goodman desaparece misteriosamente; Tim, su hijo de 21 años, debe averiguar qué sucedió. En la investigación lo ayuda el antiguo compañero Pokémon de Harry, el Detective Pikachu: un super detective adorable y ocurrente que se asombra incluso a sí mismo. Tim y Pikachu se dan cuenta que increíblemente pueden comunicarse, y unen fuerzas en una aventura para develar el misterio enmarañado. Mientras buscan pistas en las calles resplandecientes de Ryme City, una vasta metrópolis moderna donde los humanos y los Pokémon comparten un mundo real hiperrealista, encuentran distintos personajes Pokémon y descubren un complot impactante que podría destruir la convivencia pacífica y amenazar a todo el universo Pokémon.', 'img/pikachu.jpg'),
+(47, 'infantil ', 'UglyDolls', 'UglyDolls', 2019, 'https://www.youtube.com/watch?v=zMBGFWRM5z8', 'Hace muchos años, se crearon los muñecos para dar felicidad a todos los niños del mundo. Pero, ¿alguna vez te has preguntado de dónde vienen? Viven en una ciudad mágica donde todo es perfecto. Por el contrario, los UglyDolls, los muñecos de peluche imperfectos, viven en Feolandia, un mundo en el que nadie los juzga y en el que se sienten felices y protegidos. Pero...¿qué pasaría si estos dos mundos se unieran?', 'img/ugly dolls.jpg'),
+(48, 'Documental', 'Leonardo. Cinquecento', 'Leonardo. Cinquecento', 2019, 'https://www.youtube.com/watch?v=8RnvTJs_lRc', '500 años después de su muerte, Leonardo sigue siendo uno de los hombres más admirados y reconocidos de la historia de la humanidad. Artista, arquitecto, humanista, naturalista y estratega militar, Leonardo Da Vinci fue, por encima de todo, un observador incansable en busca de nuevos descubrimientos. Con contribuciones de destacados expertos internacionales y un grupo de técnicos e ingenieros, este documental analiza las obras de Leonardo a través de las implicaciones modernas de su trabajo.', 'img/leonardo da vinci.jpg'),
+(49, 'Ciencia Ficción', 'Avengers: Endgame', 'Avengers: Endgame', 2019, 'https://www.youtube.com/watch?v=1XrrTJpA3yM', 'Después de los eventos devastadores de \'Avengers: Infinity War\', el universo está en ruinas debido a las acciones de Thanos, el Titán Loco. Con la ayuda de los aliados que quedaron, los Vengadores deberán reunirse una vez más para intentar deshacer sus acciones y restaurar el orden en el universo de una vez por todas, sin importar cuáles son las consecuencias... Cuarta y última entrega de la saga \"Vengadores\". ', 'img/endgame.jpg'),
+(50, 'Romance', 'La primera cita', 'La primera cita', 2019, 'https://www.youtube.com/watch?v=3S6XzGHdbCk', 'Isabel, que nunca ha recibido muchas muestras de cariño y comprensión de su marido Sebastián, militar prejubilado, sufre un brote de Alzheimer. Empieza entonces a confundir a su esposo con otras personas, y es así, por accidente, que Sebastián descubre la verdad que nunca reconoció sobre su agrio carácter.', 'img/la primera cita.jpg'),
+(51, 'Comedia', 'La pequeña Suiza', 'La pequeña Suiza', 2019, 'https://www.youtube.com/watch?v=3qPsFDNQJGM', 'Narra las peripecias de los habitantes de un imaginario pueblo castellano enclavado en el centro del País Vasco llamado Tellería, que desea, tras 700 años de historia, pasar a ser parte del territorio vasco. Tras la negativa del gobierno, un curioso hallazgo en el santuario del pueblo originará que los osados habitantes de Tellería pidan su anexión, nada menos que a uno de los países más ricos del mundo: Suiza', 'img/la pequeña suiza.jpeg'),
+(52, 'Romance', 'Gloria Bell', 'Gloria Bell', 2019, 'https://www.youtube.com/watch?v=Ww6_QxM1b2Y', 'Una divorciada de espíritu libre (Moore) pasa los días trabajando en una oficina. Por la noche se desata bailando en las diferentes discotecas de Los Ángeles. Cuando encuentra a Arnold (Turturro), su vida cambia radicalmente al verse inmersa en un inesperado romance.', 'img/gloria bell.jpg'),
+(53, 'Documental', 'Young Picasso', 'El joven Picasso', 2019, 'https://www.youtube.com/watch?v=L3LW-dZhpCg', 'Demasiado tiempo ignorado, es el momento de mirar a los primeros años de Picasso; la crianza y el aprendizaje que le llevó a sus logros extraordinarios. Tres ciudades juegan un papel clave: Málaga, Barcelona y París. El joven Picasso visita cada uno de ellos y explora su influencia en Picasso, centrándose en obras de arte específicas de estos primeros años. La película explica así cómo este joven artista adquirió su oficio. Mirando detenidamente dos periodos claves: los llamados períodos azul y rosa.', 'img/picasso.jpg'),
+(54, 'infantil', 'Wonder Park', 'Wonder Park', 2019, 'https://www.youtube.com/watch?v=yQiKMgQC1i8', 'June (Brianna Denski) es una niña muy creativa que logra dar con un increíble parque de diversiones plagado de atracciones increíbles y animales parlanchines. El punto es que aunque inicialmente cree que este parque mágico fue abandonado, en realidad proviene de su imaginación y por eso es la única que podrá salvarlo de una gran amenaza. ', 'img/wonder park.jpg'),
+(55, 'Terror', 'Us', 'Nosotros', 2019, 'https://www.youtube.com/watch?v=qJh9_0xH3mY', 'Adelaide Wilson es una mujer que vuelve al hogar de su infancia en la costa junto a su marido, Gabe, y sus dos hijos, para una idílica escapada veraniega. Después de un tenso día en la playa con sus amigos, Adelaide y su familia vuelven a la casa donde están pasando las vacaciones. Cuando cae la noche, los Wilson descubren la silueta de cuatro figuras cogidas de la mano y en pie delante de la vivienda. \"Nosotros\" enfrenta a una entrañable familia estadounidense a un enemigo tan insólito como aterrador.', 'img/us.jpeg'),
+(56, 'Terror', 'Escape Room', 'Escape Room', 2019, 'https://www.youtube.com/watch?v=9C1V8XPBlkw', 'Seis desconocidos se encuentran en una habitación mortal en la que deberán usar su ingenio para sobrevivir.', 'img/escape room.jpg'),
+(57, 'accion', 'Mad Max', 'Mad Max', 2015, 'https://www.youtube.com/watch?v=GvsFoGIuRX4', 'Perseguido por su turbulento pasado, Mad Max cree que la mejor forma de sobrevivir es ir solo por el mundo. Sin embargo, se ve arrastrado a formar parte de un grupo que huye a través del desierto en un War Rig conducido por una Emperatriz de élite: Furiosa. Escapan de una Ciudadela tiranizada por Immortan Joe, a quien han arrebatado algo irreemplazable. Enfurecido, el Señor de la Guerra moviliza a todas sus bandas y persigue implacablemente a los rebeldes en una \"guerra de la carretera\" de altas revoluciones... Cuarta entrega de la saga post-apocalíptica que resucita la trilogía que a principios de los ochenta protagonizó Mel Gibson.', 'img/mad max.jpg'),
+(58, 'accion', 'Skyfall', 'Skyfall', 2012, 'https://www.youtube.com/watch?v=UbC7iRA_O3g', 'La lealtad de James Bond (Daniel Craig), el mejor agente de los servicios secretos británicos, por su superiora M (Judi Dench) se verá puesta a prueba cuando episodios del pasado de ella vuelven para atormentarla. Al mismo tiempo, el MI6 sufre un ataque, y 007 tendrá que localizar y destruir el grave peligro que representa el villano Silva (Javier Bardem). Para conseguirlo contará con la ayuda de la agente Eve (Naomie Harris). ', 'img/skyfall.jpg');
+
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `usuario`
+-- 表的结构 `usuario`
 --
 
 CREATE TABLE `usuario` (
   `id` int(11) NOT NULL,
+  `nombre` varchar(50) NOT NULL,
+  `apellido` varchar(50) NOT NULL,
+  `dni` varchar(50) NOT NULL,
   `usuario` varchar(50) NOT NULL,
   `clave` varchar(50) NOT NULL,
+  `correo` varchar(100) NOT NULL,
   `nivel` varchar(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Volcado de datos para la tabla `usuario`
+-- 转存表中的数据 `usuario`
 --
 
-INSERT INTO `usuario` (`id`, `usuario`, `clave`, `nivel`) VALUES
-(1, 'admin', 'admin', 'admin'),
-(2, 'user', 'user', 'user');
+INSERT INTO `usuario` (`id`, `nombre`, `apellido`, `dni`, `usuario`, `clave`, `correo`, `nivel`) VALUES
+(3, 'Alirio', 'Suarez', '11111111A', 'user', 'user', 'prueba1@correo.com', 'user'),
+(4, 'Alejandro', 'Jimenez', '22222222B', 'admin', 'admin', 'prueba2@correo.com', 'admin');
 
 --
--- Índices para tablas volcadas
+-- 转储表的索引
 --
 
 --
--- Indices de la tabla `peliculas`
+-- 表的索引 `peliculas`
 --
 ALTER TABLE `peliculas`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indices de la tabla `usuario`
+-- 表的索引 `usuario`
 --
 ALTER TABLE `usuario`
   ADD PRIMARY KEY (`id`);
 
 --
--- AUTO_INCREMENT de las tablas volcadas
+-- 在导出的表使用AUTO_INCREMENT
 --
 
 --
--- AUTO_INCREMENT de la tabla `peliculas`
+-- 使用表AUTO_INCREMENT `peliculas`
 --
 ALTER TABLE `peliculas`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=43;
 
 --
--- AUTO_INCREMENT de la tabla `usuario`
+-- 使用表AUTO_INCREMENT `usuario`
 --
 ALTER TABLE `usuario`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

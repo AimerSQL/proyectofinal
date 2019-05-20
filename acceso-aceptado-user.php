@@ -6,7 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Cinopia</title>
     <link href="css/estilo.css" rel="stylesheet" type="text/css"/>
-    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </head>
 <body>
     <?php 
@@ -20,36 +23,37 @@
              }
         }
     ?>
-     <header class="header">
-      <div class="container logo-nav-container">
-            <div class="dropdown">
-                  <button class="dropbtn" onclick="myFunction()">
-                     Géneros
-                  </button>
-                  <div class="dropdown-content" id="myDropdown">
-                  <a href="#accion">Acción</a>
-                  <a href="#romance">Romance</a>
-                  <a href="#terror">Terror</a>
-                  <a href="#Cficción">Ciencia Ficción</a>
-                  <a href="#comedia">Comedia</a>
-                  <a href="#documentales">Documentales</a>
-                  <a href="#infantil">Infantil</a>
-                  </div>
-              </div>
-          <a href="index.html" class="logo">Cinopia</a>
-
-          
-          <!--Navegador superior-->
-          <div class="navigation">
-                  
-               <input type="text" id="peliQueBuscas">
-               <input type="button" id="buscar" value="buscar">
-               <a href="#">Perfil</a>
-               <a href="#" id="cerrarSesion">Cerrar sesión</a>
-                        
-            </div>
+    <nav class="navbar navbar-dark" id="head">
+    <a class="navbar-brand ml-3 tamano" href="acceso-aceptado-user.php">Cinopia</a>
+    <div class="float-right">
+    <form class="form-inline mr-3">
+        <input id="peliQueBuscas" class="form-control mr-sm-1 mb-1 mt-1" type="text" placeholder="buscar">
+        <button id="buscar" class="btn btn-sm  btn-warning" type="button">Search</button>
+    </form>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+        Generos
+      </a>
+      <div class="dropdown-menu">
+          <a class="dropdown-item" href="#accion">Acción</a>
+          <a class="dropdown-item" href="#romance">Romance</a>
+          <a class="dropdown-item" href="#terror">Terror</a>
+          <a class="dropdown-item" href="#Cficcion">Ciencia Ficción</a>
+          <a class="dropdown-item" href="#comedia">Comedia</a>
+          <a class="dropdown-item" href="#documentales">Documentales</a>
+          <a class="dropdown-item" href="#infantil">Infantil</a>
       </div>
-  </header>
+    </li>
+    <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link">Perfil</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="cerrarSesion">Cerrar sesión</a>
+        </li>
+    </ul>
+    </div>
+    </nav>
 
   <section class="main-primero" id="accion">
       <h1>ACCIÓN</h1>
@@ -67,10 +71,11 @@
                $titulo=$fila['tituloOriginal'];
                $image=$fila['image'];
                $id = $fila['id'];
-               echo '<div class="product" id="product_'.$cont.'">
-               <a href="peliculas.php?id='.$id.'"><img src="'.$image.'" class="cajas-fotos"></a>
-               <h2>'.$titulo.'</h2>
-          </div>';
+               echo 
+               '<div class="product" id="product_'.$cont.'">
+               <a href="peliculas.php?id='.$id.'"><img src="'.$image.'"></a>
+               <div class="cajaTitulo"><h4>'.$titulo.'</h4></div>
+              </div>';
                $cont++;
              }
              
@@ -117,7 +122,7 @@
            </div> 
    </section>      
    <section class="main-primero" id="romance">
-      <h1>ROMANCE</h1>
+      <h2>ROMANCE</h2>
       <?php
         require ('conexion.php');
         require_once ('seguridad-global2.php');
@@ -134,8 +139,8 @@
                $id = $fila['id'];
                echo '<div class="product" id="product_'.$cont.'">
                <a href="peliculas.php?id='.$id.'"><img src="'.$image.'" class="cajas-fotos"></a>
-               <h2>'.$titulo.'</h2>
-          </div>';
+               <div class="cajaTitulo"><h4>'.$titulo.'</h4></div>
+              </div>';
                $cont++;  
              }
              
@@ -201,7 +206,7 @@
                $id = $fila['id'];
                echo '<div class="product" id="product_'.$cont.'">
                <a href="peliculas.php?id='.$id.'"><img src="'.$image.'" class="cajas-fotos"></a>
-               <h2>'.$titulo.'</h2>
+               <div class="cajaTitulo"><h4>'.$titulo.'</h4></div>
           </div>';
                $cont++;
              }
@@ -250,26 +255,26 @@
                      </div>-->
                  </div> 
          </section>
-    <section class="main-primero" id="Cficción">
+         <section class="main-primero" id="Cficcion">
       <h1>CIENCIA FICCIÓN</h1>
       <?php
         require ('conexion.php');
         require_once ('seguridad-global2.php');
         $mysqli->set_charset("utf8");
         if($resultado = $mysqli->query("SELECT * FROM peliculas WHERE genero LIKE '%Ficción%'")){
-         echo '<div id="carrusel">
-            <a href="#" class="left-arrow"><img src="img/back.png" /></a>
-            <a href="#" class="right-arrow"><img src="img/next.png" /></a>
-            <div class="carrusel">';
-        $cont = 0;
-            while ($fila = $resultado->fetch_assoc()) {
-            $titulo=$fila['tituloOriginal'];
-            $image=$fila['image'];
-            $id = $fila['id'];
-                echo '<div class="product" id="product_'.$cont.'">
-                <a href="peliculas.php?id='.$id.'"><img src="'.$image.'" class="cajas-fotos"></a>
-                <h2>'.$titulo.'</h2>
-                  </div>';
+             echo '<div id="carrusel">
+             <a href="#" class="left-arrow" id="4"><img src="img/back.png" /></a>
+             <a href="#" class="right-arrow" id="4"><img src="img/next.png" /></a>
+             <div class="carrusel" id="c4">';
+             $cont = 0;
+             while ($fila = $resultado->fetch_assoc()) {
+               $titulo=$fila['tituloOriginal'];
+               $image=$fila['image'];
+               $id = $fila['id'];
+               echo '<div class="product" id="product_'.$cont.'">
+               <a href="peliculas.php?id='.$id.'"><img src="'.$image.'" class="cajas-fotos"></a>
+               <div class="cajaTitulo"><h4>'.$titulo.'</h4></div>
+          </div>';
                $cont++;
              }
              
@@ -336,7 +341,7 @@
                $id = $fila['id'];
                echo '<div class="product" id="product_'.$cont.'">
                <a href="peliculas.php?id='.$id.'"><img src="'.$image.'" class="cajas-fotos"></a>
-               <h2>'.$titulo.'</h2>
+               <div class="cajaTitulo"><h4>'.$titulo.'</h4></div>
           </div>';
                $cont++;
              }
@@ -404,7 +409,7 @@
                $id = $fila['id'];
                echo '<div class="product" id="product_'.$cont.'">
                <a href="peliculas.php?id='.$id.'"><img src="'.$image.'" class="cajas-fotos"></a>
-               <h2>'.$titulo.'</h2>
+               <div class="cajaTitulo"><h4>'.$titulo.'</h4></div>
           </div>';
                $cont++;
              }
@@ -471,7 +476,7 @@
                $id = $fila['id'];
                echo '<div class="product" id="product_'.$cont.'">
                <a href="peliculas.php?id='.$id.'"><img src="'.$image.'" class="cajas-fotos"></a>
-               <h2>'.$titulo.'</h2>
+               <div class="cajaTitulo"><h4>'.$titulo.'</h4></div>
           </div>';
                $cont++;
              }
