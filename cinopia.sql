@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.5
+-- version 4.8.3
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Generation Time: May 10, 2019 at 02:16 PM
--- Server version: 10.1.38-MariaDB
--- PHP Version: 7.3.4
+-- 主机： 127.0.0.1
+-- 生成日期： 2019-05-19 21:18:51
+-- 服务器版本： 10.1.36-MariaDB
+-- PHP 版本： 7.2.10
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -19,13 +19,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `cinopia`
+-- 数据库： `cinopia`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `peliculas`
+-- 表的结构 `peliculas`
 --
 
 CREATE TABLE `peliculas` (
@@ -40,7 +40,7 @@ CREATE TABLE `peliculas` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `peliculas`
+-- 转存表中的数据 `peliculas`
 --
 
 INSERT INTO `peliculas` (`id`, `genero`, `tituloOriginal`, `tituloEsp`, `anioEstreno`, `trailer`, `sinopsis`, `image`) VALUES
@@ -100,59 +100,63 @@ INSERT INTO `peliculas` (`id`, `genero`, `tituloOriginal`, `tituloEsp`, `anioEst
 (56, 'Terror', 'Escape Room', 'Escape Room', 2019, 'https://www.youtube.com/watch?v=9C1V8XPBlkw', 'Seis desconocidos se encuentran en una habitación mortal en la que deberán usar su ingenio para sobrevivir.', 'img/escape room.jpg'),
 (57, 'accion', 'Mad Max', 'Mad Max', 2015, 'https://www.youtube.com/watch?v=GvsFoGIuRX4', 'Perseguido por su turbulento pasado, Mad Max cree que la mejor forma de sobrevivir es ir solo por el mundo. Sin embargo, se ve arrastrado a formar parte de un grupo que huye a través del desierto en un War Rig conducido por una Emperatriz de élite: Furiosa. Escapan de una Ciudadela tiranizada por Immortan Joe, a quien han arrebatado algo irreemplazable. Enfurecido, el Señor de la Guerra moviliza a todas sus bandas y persigue implacablemente a los rebeldes en una \"guerra de la carretera\" de altas revoluciones... Cuarta entrega de la saga post-apocalíptica que resucita la trilogía que a principios de los ochenta protagonizó Mel Gibson.', 'img/mad max.jpg'),
 (58, 'accion', 'Skyfall', 'Skyfall', 2012, 'https://www.youtube.com/watch?v=UbC7iRA_O3g', 'La lealtad de James Bond (Daniel Craig), el mejor agente de los servicios secretos británicos, por su superiora M (Judi Dench) se verá puesta a prueba cuando episodios del pasado de ella vuelven para atormentarla. Al mismo tiempo, el MI6 sufre un ataque, y 007 tendrá que localizar y destruir el grave peligro que representa el villano Silva (Javier Bardem). Para conseguirlo contará con la ayuda de la agente Eve (Naomie Harris). ', 'img/skyfall.jpg');
- 
+
 -- --------------------------------------------------------
 
 --
--- Table structure for table `usuario`
+-- 表的结构 `usuario`
 --
 
 CREATE TABLE `usuario` (
   `id` int(11) NOT NULL,
+  `nombre` varchar(50) NOT NULL,
+  `apellido` varchar(50) NOT NULL,
+  `dni` varchar(50) NOT NULL,
   `usuario` varchar(50) NOT NULL,
   `clave` varchar(50) NOT NULL,
+  `correo` varchar(100) NOT NULL,
   `nivel` varchar(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `usuario`
+-- 转存表中的数据 `usuario`
 --
 
-INSERT INTO `usuario` (`id`, `usuario`, `clave`, `nivel`) VALUES
-(1, 'admin', 'admin', 'admin'),
-(2, 'user', 'user', 'user');
+INSERT INTO `usuario` (`id`, `nombre`, `apellido`, `dni`, `usuario`, `clave`, `correo`, `nivel`) VALUES
+(3, 'Alirio', 'Suarez', '11111111A', 'user', 'user', 'prueba1@correo.com', 'user'),
+(4, 'Alejandro', 'Jimenez', '22222222B', 'admin', 'admin', 'prueba2@correo.com', 'admin');
 
 --
--- Indexes for dumped tables
+-- 转储表的索引
 --
 
 --
--- Indexes for table `peliculas`
+-- 表的索引 `peliculas`
 --
 ALTER TABLE `peliculas`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `usuario`
+-- 表的索引 `usuario`
 --
 ALTER TABLE `usuario`
   ADD PRIMARY KEY (`id`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- 在导出的表使用AUTO_INCREMENT
 --
 
 --
--- AUTO_INCREMENT for table `peliculas`
+-- 使用表AUTO_INCREMENT `peliculas`
 --
 ALTER TABLE `peliculas`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=59;
 
 --
--- AUTO_INCREMENT for table `usuario`
+-- 使用表AUTO_INCREMENT `usuario`
 --
 ALTER TABLE `usuario`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

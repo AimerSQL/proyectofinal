@@ -2,8 +2,8 @@
     margin: 0;
     padding: 0;   
 }
-html,body{
-    /* Incluye por defecto la barra de desplazamiento vertical */
+html{
+    /* Incluye por defecto la barra de desplazamiento vertical  y ocultar barra horizontal*/
     overflow-y: scroll;
     overflow-x: hidden;
     /* Evita que border y padding sumen en el ancho o alto de los elementos */
@@ -13,127 +13,70 @@ html,body{
    /* Evita que border y padding sumen en el ancho o alto de los elementos */
    *, *:before, *:after { box-sizing: inherit; }
    
-
-
-
-/*CABECERO ESTÁTICO*/
-.header{
-    background: rgba(255, 100, 28, 0.698);
-    color:white;
-    padding: 1rem 0;
-    position: fixed;
-    left:0;
-    top:0;
+body{
+    background-color: #f2f2f2 !important;
+}
+a{
+    text-decoration: none !important;
+    color: #212529 !important;
+    cursor: pointer;
+}
+a:hover{
+    text-decoration: none !important;
+    color: #212529;
+}
+nav a{
+    color:white !important;
+}
+.dropdown-item{
+    color: black !important;
+}
+.navbar{
+     background: rgba(255, 100, 28, 0.698) !important;
+     z-index: 1;
+ }
+ .navbar-nav{
+    font-family: Arial, Helvetica, sans-serif;
+ }
+#head{
+    position: fixed !important;
+    left: 0;
     right: 0;
-    z-index: 1;
- }
-
-
- .header a{
-    color:white;
-    text-decoration: none;
- }
-
- /*LOGO*/
- .logo-nav-container{  
-    display:flex;
-    justify-content:space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    
- }
- .logo{
-    letter-spacing: 4px;
-    font-size: 2em;
-    position: relative;
-    left: 80px;
- }
- 
-
-/*MENU SUPERIOR*/ 
-.navigation {
+    top: 0;
     margin:0;
     padding:0;
-    overflow: hidden;
-    font-family: Arial, Helvetica, sans-serif;
-    float: right;
+}
+.tamano{
+    font-size: 3rem !important;
 }
 
-.navigation a{
-    float: left;
-    font-size: 16px;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+.float-right{
+    display: flex;
+    flex-direction: row;
 }
-.navigation input{
-    float: left;
-    height: 46px;
-    padding: 14px 16px;
-    
+nav ul{
+    display: flex;
+    flex-direction: row !important;
 }
-
-.dropdown {
-    float: left;
-    overflow: hidden;
-    
+nav ul li{
+    margin-right: 1rem;
 }
-
-.dropdown .dropbtn {
+ul a{
+    color:#fff !important;
+}
+.nav-link{
+    color: #fff;
+}
+.nav-link:hover{
+    color: #212529;
+}
+.nav-item{
+    list-style: none;
     cursor: pointer;
-    font-size: 16px;    
-    border: none;
-    outline: none;
-    color: white;
-    padding: 14px 16px;
-    background-color: inherit;
-    font-family: inherit;
-    margin: 0;
-    padding-top: 18px;
-    padding-bottom: 14px;
-    font-family: Arial, Helvetica, sans-serif;
 }
-.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
-    background-color:rgb(221, 221, 221);
-    color:black;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(255, 134, 98, 0.514);
-    z-index: 1;
-}
-
-.dropdown-content a {
-    float: none;
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.dropdown-content a:hover {
-    background-color: #ffba92
-}
-
-.show {
-    display: block;
-}
-.menu-icon{
-     display:none;
-        
- }
-
  /*Contenido por genero*/
  .main-primero{
     background: #f2f2f2;
-    padding:4rem 0;
     text-align: center;
     padding-top:10%;  
  }
@@ -169,20 +112,17 @@ html,body{
     position:relative;
     
 }
- 
 .carrusel>div {
     float: left;
     margin-right: 5px;
     text-align:center;
     
 }
- 
 .carrusel img {
     cursor:pointer;
 }
- 
-.product {
-    border:#CCCCCC 1px solid;
+.cajaTitulo{
+    width: 215px;
 }
 
 #cajaUsu{
@@ -193,63 +133,162 @@ html,body{
     margin: 20px 20px;
 }
 
+/*CAJA DE PELICULAS*/
 .contenedorInfo{
     display: flex;
     flex-wrap: wrap;
     /*border: 1px solid black;*/
     justify-content: center;
 }
+.negrita{
+    font-weight: bold;
+}
 .cajaInfo{
+    text-align: left;
+    width: 500px;
     /*border: 1px solid black;*/
-    margin: 20px 20px;
-    border:1px solid black;
+    margin-left: 20px;
+    margin-bottom: 40px;
+}
+.cajaInfo p{
+    margin:0;
+}
+.cajaImage{
+    width: 500px;
+    /*border:1px solid black;*/
 }
 
-.cajaImage{
-    border:1px solid black;
+.cajitas{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    /*border: 1px solid black;*/
 }
+.cajitas div{
+    border: 1px solid #e0a800;
+    color: #212529;
+    background: #F9DB6D;
+    margin-right: 20px;
+    margin-top: 10px;
+    padding: 5px;
+    cursor: pointer;
+    font-size: .85rem;
+    border-radius: .2rem;
+    text-decoration: none;
+}
+
+/*caja buscar pelicuas*/
 .cajaPeliculasFlex{
     /*border: 1px solid black;*/
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    padding: 0 7.5%;
 }
-/*.logo{
+.cajaPeliculasFlex div{
+    margin-right: 5px;
+    margin-bottom: 2rem;
+}
+h4{
+    text-align: left;
     display: block;
-    clear: both;
-}*/
-
-
+    margin-left: 7.5%;
+}
+.cajaPeli:hover{
+    transform: scale(1.25,1.25);
+}
 .inputPeli{
     overflow: hidden;
 }
 
+/*PAGINA INDEX*/
+.form-group button{
+    margin: 0 13px;
+}
+.form-group a{
+   text-decoration: none;
+   color: #212529;
+}
 
+/*admin*/
+.usu{
+    /*border:1px solid #e0a800;*/
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px 10px;
+}
 
-
-
+.central{
+    margin:0 auto;
+}
+.opinion{
+    background-color: rgb(255, 255, 255);
+    border-radius: .2rem;
+    width: 50%;
+    margin: .5% 25%;
+    padding: .5rem .5rem;
+}
+.posicionC{
+    margin-left: 25%;
+    margin-top: 2rem;
+}
+#pub{
+    margin-left: 25%;
+}
+.seleccion{
+    /*border:1px solid black;*/
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    display: flex;
+}
+.tipo{
+    width: 150px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    padding-left: 10px;
+    border: 1px solid #e0a800;
+    color: #212529;
+    background: #F9DB6D;
+    cursor: pointer;
+    font-size: .85rem;
+    border-radius: .2rem;
+    text-decoration: none;
+}
+.peliForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin:0 auto;
+}
+.hide{
+    display: none;
+}
 
 @media all and (max-width:700px){
-    .inputPeli{
-        overflow: hidden;
-        clear: both;
-    }
-    .logo{
-        display: block;
-    }
-    .headerFlex{
-        margin:1rem 0;
-    }
     .main-primero{
-        margin:195px 0;    
+        margin-top:195px;    
       }
-    .logo{
-
+      .opinion{    
+        width: 80%;
+        margin: 0 10%;
+    }
+    .posicionC{
+        margin-left: 10%;
+    }
+    #pub{
+        margin-left: 10%;
+    }
+}
+@media all and (max-width:585px){
+    .float-right{
+        flex-wrap: wrap;
     }
     
 }
 @media all and (max-width:1100px) and (min-width:701px){
     .main-primero{
-        margin:125px 0;    
+        margin-top:125px;    
       }
 }
