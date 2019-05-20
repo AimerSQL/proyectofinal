@@ -24,35 +24,35 @@
         }
     ?>
     <nav class="navbar navbar-dark" id="head">
-    <a class="navbar-brand ml-3 tamano" href="acceso-aceptado-user.php">Cinopia</a>
-    <div class="float-right">
-    <form class="form-inline mr-3">
-        <input id="peliQueBuscas" class="form-control mr-sm-1 mb-1 mt-1" type="text" placeholder="buscar">
-        <button id="buscar" class="btn btn-sm  btn-warning" type="button">Search</button>
-    </form>
-    <li class="nav-item dropdown">
-      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-        Generos
-      </a>
-      <div class="dropdown-menu">
-          <a class="dropdown-item" href="#accion">Acción</a>
-          <a class="dropdown-item" href="#romance">Romance</a>
-          <a class="dropdown-item" href="#terror">Terror</a>
-          <a class="dropdown-item" href="#Cficcion">Ciencia Ficción</a>
-          <a class="dropdown-item" href="#comedia">Comedia</a>
-          <a class="dropdown-item" href="#documentales">Documentales</a>
-          <a class="dropdown-item" href="#infantil">Infantil</a>
-      </div>
-    </li>
-    <ul class="navbar-nav">
-        <li class="nav-item">
-            <a class="nav-link">Perfil</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" id="cerrarSesion">Cerrar sesión</a>
-        </li>
-    </ul>
-    </div>
+     <a class="navbar-brand ml-3 tamano" href="acceso-aceptado-user.php">Cinopia</a>
+     <div class="float-right">
+     <form class="form-inline mr-3">
+          <input id="peliQueBuscas" class="form-control mr-sm-1 mb-1 mt-1" type="text" placeholder="buscar">
+          <button id="buscar" class="btn btn-sm  btn-warning" type="button">Search</button>
+     </form>
+     <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+          Generos
+          </a>
+          <div class="dropdown-menu">
+               <a class="dropdown-item" href="#accion">Acción</a>
+               <a class="dropdown-item" href="#romance">Romance</a>
+               <a class="dropdown-item" href="#terror">Terror</a>
+               <a class="dropdown-item" href="#Cficcion">Ciencia Ficción</a>
+               <a class="dropdown-item" href="#comedia">Comedia</a>
+               <a class="dropdown-item" href="#documentales">Documentales</a>
+               <a class="dropdown-item" href="#infantil">Infantil</a>
+          </div>
+     </li>
+     <ul class="navbar-nav">
+          <li class="nav-item">
+               <a class="nav-link">Perfil</a>
+          </li>
+          <li class="nav-item">
+               <a class="nav-link" id="cerrarSesion">Cerrar sesión</a>
+          </li>
+     </ul>
+     </div>
     </nav>
 
   <section class="main-primero" id="accion">
@@ -84,43 +84,8 @@
         }
         
     ?>
-          <!--<div id="carrusel">
-               <a href="#" class="left-arrow"><img src="img/back.png" /></a>
-               <a href="#" class="right-arrow"><img src="img/next.png" /></a>
-               <div class="carrusel">
-                   <div class="product" id="product_0">
-                        <img src="img/imagen_portadas.png" class="cajas-fotos">
-                        <h2>TITULO</h2>
-                   </div>
-                   <div class="product" id="product_1">
-                        <img src="img/imagen_portadas.png" class="cajas-fotos">
-                        <h2>TITULO</h2>
-                       
-                   </div>
-                   <div class="product" id="product_2">
-                        <img src="img/imagen_portadas.png" class="cajas-fotos">
-                        <h2>TITULO</h2>
-                   </div>
-                   <div class="product" id="product_3">
-                        <img src="img/imagen_portadas.png" class="cajas-fotos">
-                        <h2>TITULO</h2>
-                   </div>
-                   <div class="product" id="product_4">
-                        <img src="img/imagen_portadas.png" class="cajas-fotos">
-                        <h2>TITULO</h2>
-                   </div>
-                   <div class="product" id="product_5">
-                        <img src="img/imagen_portadas.png" class="cajas-fotos">
-                        <h2>TITULO</h2>
-                   </div>
-                   <div class="product" id="product_5">
-                        <img src="img/imagen_portadas.png" class="cajas-fotos">
-                        <h2>TITULO</h2>
-                   </div>
-                   
-               </div>-->
-           </div> 
-   </section>      
+   </section>     
+
    <section class="main-primero" id="romance">
       <h2>ROMANCE</h2>
       <?php
@@ -149,44 +114,8 @@
         }
         
     ?>
-  
-                  
-            <!-- <div id="carrusel">
-                  <a href="#" class="left-arrow"><img src="img/back.png" /></a>
-                  <a href="#" class="right-arrow"><img src="img/next.png" /></a>
-                  <div class="carrusel">
-                      <div class="product" id="product_0">
-                           <img src="img/imagen_portadas.png" class="cajas-fotos">
-                           <h2>TITULO</h2>
-                      </div>
-                      <div class="product" id="product_0">
-                           <img src="img/imagen_portadas.png" class="cajas-fotos">
-                           <h2>TITULO</h2>
-                      </div>
-                      <div class="product" id="product_0">
-                           <img src="img/imagen_portadas.png" class="cajas-fotos">
-                           <h2>TITULO</h2>
-                      </div>
-                      <div class="product" id="product_0">
-                           <img src="img/imagen_portadas.png" class="cajas-fotos">
-                           <h2>TITULO</h2>
-                      </div>
-                      <div class="product" id="product_4">
-                           <img src="img/imagen_portadas.png" class="cajas-fotos">
-                           <h2>TITULO</h2>
-                      </div>
-                      <div class="product" id="product_5">
-                           <img src="img/imagen_portadas.png" class="cajas-fotos">
-                           <h2>TITULO</h2>
-                      </div>
-                      <div class="product" id="product_5">
-                           <img src="img/imagen_portadas.png" class="cajas-fotos">
-                           <h2>TITULO</h2>
-                      </div>
-                      
-                  </div>-->
-              </div> 
-      </section>
+              
+     </section>
          
     <section class="main-primero" id="terror">
       <h1>TERROR</h1>
@@ -215,46 +144,10 @@
          
         }
         
-    ?>
-      <!--<section class="main-primero" id="terror">
-            <h1>TERROR</h1>
-                     
-                <div id="carrusel">
-                     <a href="#" class="left-arrow"><img src="img/back.png" /></a>
-                     <a href="#" class="right-arrow"><img src="img/next.png" /></a>
-                     <div class="carrusel">
-                         <div class="product" id="product_0">
-                              <img src="img/imagen_portadas.png" class="cajas-fotos">
-                              <h2>TITULO</h2>
-                         </div>
-                         <div class="product" id="product_0">
-                              <img src="img/imagen_portadas.png" class="cajas-fotos">
-                              <h2>TITULO</h2>
-                         </div>
-                         <div class="product" id="product_0">
-                              <img src="img/imagen_portadas.png" class="cajas-fotos">
-                              <h2>TITULO</h2>
-                         </div>
-                         <div class="product" id="product_0">
-                              <img src="img/imagen_portadas.png" class="cajas-fotos">
-                              <h2>TITULO</h2>
-                         </div>
-                         <div class="product" id="product_4">
-                              <img src="img/imagen_portadas.png" class="cajas-fotos">
-                              <h2>TITULO</h2>
-                         </div>
-                         <div class="product" id="product_5">
-                              <img src="img/imagen_portadas.png" class="cajas-fotos">
-                              <h2>TITULO</h2>
-                         </div>
-                         <div class="product" id="product_5">
-                              <img src="img/imagen_portadas.png" class="cajas-fotos">
-                              <h2>TITULO</h2>
-                         </div>
-                         
-                     </div>-->
-                 </div> 
-         </section>
+          ?>
+      
+     
+     </section>
          <section class="main-primero" id="Cficcion">
       <h1>CIENCIA FICCIÓN</h1>
       <?php
@@ -283,44 +176,8 @@
         }
         
     ?>
-   <!--<section class="main-primero" id="Cficción">
-         <h1>CIENCIA FICCIÓN</h1>
-                  
-             <div id="carrusel">
-                  <a href="#" class="left-arrow"><img src="img/back.png" /></a>
-                  <a href="#" class="right-arrow"><img src="img/next.png" /></a>
-                  <div class="carrusel">
-                      <div class="product" id="product_0">
-                           <img src="img/imagen_portadas.png" class="cajas-fotos">
-                           <h2>TITULO</h2>
-                      </div>
-                      <div class="product" id="product_0">
-                           <img src="img/imagen_portadas.png" class="cajas-fotos">
-                           <h2>TITULO</h2>
-                      </div>
-                      <div class="product" id="product_0">
-                           <img src="img/imagen_portadas.png" class="cajas-fotos">
-                           <h2>TITULO</h2>
-                      </div>
-                      <div class="product" id="product_0">
-                           <img src="img/imagen_portadas.png" class="cajas-fotos">
-                           <h2>TITULO</h2>
-                      </div>
-                      <div class="product" id="product_4">
-                           <img src="img/imagen_portadas.png" class="cajas-fotos">
-                           <h2>TITULO</h2>
-                      </div>
-                      <div class="product" id="product_5">
-                           <img src="img/imagen_portadas.png" class="cajas-fotos">
-                           <h2>TITULO</h2>
-                      </div>
-                      <div class="product" id="product_5">
-                           <img src="img/imagen_portadas.png" class="cajas-fotos">
-                           <h2>TITULO</h2>
-                      </div>
-                      
-                  </div>-->
-              </div> 
+   
+     
       </section>
       
       <section class="main-primero" id="comedia">
@@ -351,44 +208,8 @@
         }
         
     ?>
-      <!--<section class="main-primero" id="comedia">
-         <h1>COMEDIA</h1>
-                  
-             <div id="carrusel">
-                  <a href="#" class="left-arrow"><img src="img/back.png" /></a>
-                  <a href="#" class="right-arrow"><img src="img/next.png" /></a>
-                  <div class="carrusel">
-                      <div class="product" id="product_0">
-                           <img src="img/imagen_portadas.png" class="cajas-fotos">
-                           <h2>TITULO</h2>
-                      </div>
-                      <div class="product" id="product_0">
-                           <img src="img/imagen_portadas.png" class="cajas-fotos">
-                           <h2>TITULO</h2>
-                      </div>
-                      <div class="product" id="product_0">
-                           <img src="img/imagen_portadas.png" class="cajas-fotos">
-                           <h2>TITULO</h2>
-                      </div>
-                      <div class="product" id="product_0">
-                           <img src="img/imagen_portadas.png" class="cajas-fotos">
-                           <h2>TITULO</h2>
-                      </div>
-                      <div class="product" id="product_4">
-                           <img src="img/imagen_portadas.png" class="cajas-fotos">
-                           <h2>TITULO</h2>
-                      </div>
-                      <div class="product" id="product_5">
-                           <img src="img/imagen_portadas.png" class="cajas-fotos">
-                           <h2>TITULO</h2>
-                      </div>
-                      <div class="product" id="product_5">
-                           <img src="img/imagen_portadas.png" class="cajas-fotos">
-                           <h2>TITULO</h2>
-                      </div>
-                      
-                  </div>-->
-              </div> 
+      
+     
       </section>
       
       <section class="main-primero" id="documentales">
@@ -419,44 +240,8 @@
         }
         
     ?>
-   <!--<section class="main-primero" id="documentales">
-         <h1>DOCUMENTALES</h1>
-                  
-             <div id="carrusel">
-                  <a href="#" class="left-arrow"><img src="img/back.png" /></a>
-                  <a href="#" class="right-arrow"><img src="img/next.png" /></a>
-                  <div class="carrusel">
-                      <div class="product" id="product_0">
-                           <img src="img/imagen_portadas.png" class="cajas-fotos">
-                           <h2>TITULO</h2>
-                      </div>
-                      <div class="product" id="product_0">
-                           <img src="img/imagen_portadas.png" class="cajas-fotos">
-                           <h2>TITULO</h2>
-                      </div>
-                      <div class="product" id="product_0">
-                           <img src="img/imagen_portadas.png" class="cajas-fotos">
-                           <h2>TITULO</h2>
-                      </div>
-                      <div class="product" id="product_0">
-                           <img src="img/imagen_portadas.png" class="cajas-fotos">
-                           <h2>TITULO</h2>
-                      </div>
-                      <div class="product" id="product_4">
-                           <img src="img/imagen_portadas.png" class="cajas-fotos">
-                           <h2>TITULO</h2>
-                      </div>
-                      <div class="product" id="product_5">
-                           <img src="img/imagen_portadas.png" class="cajas-fotos">
-                           <h2>TITULO</h2>
-                      </div>
-                      <div class="product" id="product_5">
-                           <img src="img/imagen_portadas.png" class="cajas-fotos">
-                           <h2>TITULO</h2>
-                      </div>
-                      
-                  </div>-->
-              </div> 
+   
+     
       </section>
       <section class="main-primero" id="infantil">
       <h1>INFANTIL</h1>
@@ -486,44 +271,7 @@
         }
         
     ?>
-    <!--<section class="main-primero" id="infantil">
-         <h1>INFANTIL</h1>
-                  
-             <div id="carrusel">
-                  <a href="#" class="left-arrow"><img src="img/back.png" /></a>
-                  <a href="#" class="right-arrow"><img src="img/next.png" /></a>
-                  <div class="carrusel">
-                      <div class="product" id="product_0">
-                           <img src="img/imagen_portadas.png" class="cajas-fotos">
-                           <h2>TITULO</h2>
-                      </div>
-                      <div class="product" id="product_0">
-                           <img src="img/imagen_portadas.png" class="cajas-fotos">
-                           <h2>TITULO</h2>
-                      </div>
-                      <div class="product" id="product_0">
-                           <img src="img/imagen_portadas.png" class="cajas-fotos">
-                           <h2>TITULO</h2>
-                      </div>
-                      <div class="product" id="product_0">
-                           <img src="img/imagen_portadas.png" class="cajas-fotos">
-                           <h2>TITULO</h2>
-                      </div>
-                      <div class="product" id="product_4">
-                           <img src="img/imagen_portadas.png" class="cajas-fotos">
-                           <h2>TITULO</h2>
-                      </div>
-                      <div class="product" id="product_5">
-                           <img src="img/imagen_portadas.png" class="cajas-fotos">
-                           <h2>TITULO</h2>
-                      </div>
-                      <div class="product" id="product_5">
-                           <img src="img/imagen_portadas.png" class="cajas-fotos">
-                           <h2>TITULO</h2>
-                      </div>
-                      
-                  </div>-->
-              </div> 
+     
       </section>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
