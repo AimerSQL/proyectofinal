@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- 主机： 127.0.0.1
--- 生成日期： 2019-05-19 21:18:51
+-- 生成日期： 2019-05-20 23:53:43
 -- 服务器版本： 10.1.36-MariaDB
 -- PHP 版本： 7.2.10
 
@@ -21,6 +21,32 @@ SET time_zone = "+00:00";
 --
 -- 数据库： `cinopia`
 --
+
+-- --------------------------------------------------------
+
+--
+-- 表的结构 `opinion`
+--
+
+CREATE TABLE `opinion` (
+  `id` int(11) NOT NULL,
+  `contenido` varchar(200) NOT NULL,
+  `usuId` int(11) NOT NULL,
+  `peliId` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- 转存表中的数据 `opinion`
+--
+
+INSERT INTO `opinion` (`id`, `contenido`, `usuId`, `peliId`) VALUES
+(1, 'buena pelicula', 3, 3),
+(18, '213', 3, 22),
+(19, 'HOLA', 3, 22),
+(20, 'qqq', 3, 22),
+(21, '123', 3, 21),
+(22, '123', 3, 21),
+(23, 'que tal', 3, 3);
 
 -- --------------------------------------------------------
 
@@ -115,20 +141,27 @@ CREATE TABLE `usuario` (
   `usuario` varchar(50) NOT NULL,
   `clave` varchar(50) NOT NULL,
   `correo` varchar(100) NOT NULL,
-  `nivel` varchar(10) NOT NULL
+  `nivel` varchar(10) NOT NULL,
+  `estado` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- 转存表中的数据 `usuario`
 --
 
-INSERT INTO `usuario` (`id`, `nombre`, `apellido`, `dni`, `usuario`, `clave`, `correo`, `nivel`) VALUES
-(3, 'Alirio', 'Suarez', '11111111A', 'user', 'user', 'prueba1@correo.com', 'user'),
-(4, 'Alejandro', 'Jimenez', '22222222B', 'admin', 'admin', 'prueba2@correo.com', 'admin');
+INSERT INTO `usuario` (`id`, `nombre`, `apellido`, `dni`, `usuario`, `clave`, `correo`, `nivel`, `estado`) VALUES
+(3, 'Alirio', 'Suarez', '11111111A', 'user', 'user', 'prueba1@correo.com', 'user', 'bloqueado'),
+(4, 'Alejandro', 'Jimenez', '22222222B', 'admin', 'admin', 'prueba2@correo.com', 'admin', 'desbloqueado');
 
 --
 -- 转储表的索引
 --
+
+--
+-- 表的索引 `opinion`
+--
+ALTER TABLE `opinion`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- 表的索引 `peliculas`
@@ -145,6 +178,12 @@ ALTER TABLE `usuario`
 --
 -- 在导出的表使用AUTO_INCREMENT
 --
+
+--
+-- 使用表AUTO_INCREMENT `opinion`
+--
+ALTER TABLE `opinion`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
 
 --
 -- 使用表AUTO_INCREMENT `peliculas`
