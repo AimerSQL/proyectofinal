@@ -190,19 +190,20 @@ $(document).ready(function(){
     });
 
     $("#subirPeli").click(function(){
-        const select = $("#generoSelect").val();
         const src = $("#imagen").val();
+        let img = src.split('\\');
+        let imgNombre = img[img.length-1];
         $.ajax({
             type: "POST",
             url: "subirPeli.php",
             data:{
-                genero: select,
+                genero: $("#generoSelect").val(),
                 tituloOriginal:$("#tituloOriginal").val(),
                 tituloEsp:$("#tituloEsp").val(),
                 anio:$("#anio").val(),
                 trailer:$("#trailer").val(),
                 sinopsis:$("#sinopsis").val(),
-                imagen:src
+                imagen:imgNombre
             }
         }).done(function(msg){
             alert(msg);

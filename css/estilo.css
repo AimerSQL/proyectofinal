@@ -247,7 +247,7 @@ h4{
     width: 150px;
     margin-bottom: 10px;
     margin-left: 10px;
-    padding-left: 10px;
+    padding: 10px 10px;
     border: 1px solid #e0a800;
     color: #212529;
     background: #F9DB6D;
@@ -255,6 +255,10 @@ h4{
     font-size: .85rem;
     border-radius: .2rem;
     text-decoration: none;
+}
+.tipo:hover{
+    background-color: #e0a800;
+    border-color: #d39e00;
 }
 .peliForm{
     display: flex;
