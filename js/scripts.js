@@ -189,5 +189,31 @@ $(document).ready(function(){
         });
     });
 
+    $("#subirPeli").click(function(){
+        const select = $("#generoSelect").val();
+        const src = $("#imagen").val();
+        $.ajax({
+            type: "POST",
+            url: "subirPeli.php",
+            data:{
+                genero: select,
+                tituloOriginal:$("#tituloOriginal").val(),
+                tituloEsp:$("#tituloEsp").val(),
+                anio:$("#anio").val(),
+                trailer:$("#trailer").val(),
+                sinopsis:$("#sinopsis").val(),
+                imagen:src
+            }
+        }).done(function(msg){
+            alert(msg);
+            $("#generoSelect").val("");
+            $("#tituloOriginal").val(""),
+            $("#tituloEsp").val(""),
+            $("#anio").val(""),
+            $("#trailer").val(""),
+            $("#sinopsis").val(""),
+            $("#imagen").val("");
+        });
+    });
 
 });

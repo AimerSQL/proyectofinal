@@ -55,8 +55,16 @@
         </section>
         <div class="col-6 peliForm hide" id="peliForm">
                 <div class="form-group">
-                <label for="">Genero</label>
-                <input type="text" placeholder="" class="form-control" id="genero" style="width: 100%;" display: inline-block !important;>
+                <label for="">Género</label>
+                <select name="select" class="form-control" id="generoSelect" style="width: 100%;" display: inline-block !important;>
+                    <option value="Accion" selected>Acción</option> 
+                    <option value="Romance">Romance</option>
+                    <option value="Terror">Terror</option>
+                    <option value="Ciencia Ficción">Ciencia Ficción</option>
+                    <option value="Comedia">Comedia</option>
+                    <option value="Documental">Documental</option>
+                    <option value="Infantil">Infantil</option>
+                </select>
                 </div>
                 <div class="form-group">
                 <label for="">Titulo Original</label>
