@@ -21,11 +21,12 @@
         </form>
         <ul class="navbar-nav">
             <li class="nav-item">
-                <a class="nav-link">Perfil</a>
+                <a class="nav-link" id="perfil">Perfil</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" id="cerrarSesion">Cerrar sesión</a>
             </li>
+
         </ul>
         </div>
     </nav>

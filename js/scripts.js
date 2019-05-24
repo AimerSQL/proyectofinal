@@ -218,3 +218,13 @@ $(document).ready(function(){
     });
 
 });
+/*perfil de usuario*/
+$("#perfil").click(function(){
+
+    $.ajax({
+   
+    url: "perfil.php", 
+   
+    })
+   
+    });

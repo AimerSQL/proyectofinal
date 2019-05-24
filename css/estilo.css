@@ -32,8 +32,8 @@ nav a{
     color: black !important;
 }
 .navbar{
-     background: rgb(123, 201, 253) !important;
-     z-index: 1;
+     background:  rgb(83, 172, 245) !important;
+     z-index: 2;
  }
  .navbar-nav{
     font-family: Arial, Helvetica, sans-serif;
