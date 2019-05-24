@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.3
+-- version 4.8.5
 -- https://www.phpmyadmin.net/
 --
--- 主机： 127.0.0.1
--- 生成日期： 2019-05-20 23:53:43
--- 服务器版本： 10.1.36-MariaDB
--- PHP 版本： 7.2.10
+-- Servidor: 127.0.0.1
+-- Tiempo de generación: 24-05-2019 a las 09:52:08
+-- Versión del servidor: 10.1.38-MariaDB
+-- Versión de PHP: 7.3.3
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -19,13 +19,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- 数据库： `cinopia`
+-- Base de datos: `cinopia`
 --
 
 -- --------------------------------------------------------
 
 --
--- 表的结构 `opinion`
+-- Estructura de tabla para la tabla `opinion`
 --
 
 CREATE TABLE `opinion` (
@@ -36,7 +36,7 @@ CREATE TABLE `opinion` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- 转存表中的数据 `opinion`
+-- Volcado de datos para la tabla `opinion`
 --
 
 INSERT INTO `opinion` (`id`, `contenido`, `usuId`, `peliId`) VALUES
@@ -51,7 +51,7 @@ INSERT INTO `opinion` (`id`, `contenido`, `usuId`, `peliId`) VALUES
 -- --------------------------------------------------------
 
 --
--- 表的结构 `peliculas`
+-- Estructura de tabla para la tabla `peliculas`
 --
 
 CREATE TABLE `peliculas` (
@@ -66,7 +66,7 @@ CREATE TABLE `peliculas` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- 转存表中的数据 `peliculas`
+-- Volcado de datos para la tabla `peliculas`
 --
 
 INSERT INTO `peliculas` (`id`, `genero`, `tituloOriginal`, `tituloEsp`, `anioEstreno`, `trailer`, `sinopsis`, `image`) VALUES
@@ -118,7 +118,7 @@ INSERT INTO `peliculas` (`id`, `genero`, `tituloOriginal`, `tituloEsp`, `anioEst
 (48, 'Documental', 'Leonardo. Cinquecento', 'Leonardo. Cinquecento', 2019, 'https://www.youtube.com/watch?v=8RnvTJs_lRc', '500 años después de su muerte, Leonardo sigue siendo uno de los hombres más admirados y reconocidos de la historia de la humanidad. Artista, arquitecto, humanista, naturalista y estratega militar, Leonardo Da Vinci fue, por encima de todo, un observador incansable en busca de nuevos descubrimientos. Con contribuciones de destacados expertos internacionales y un grupo de técnicos e ingenieros, este documental analiza las obras de Leonardo a través de las implicaciones modernas de su trabajo.', 'img/leonardo da vinci.jpg'),
 (49, 'Ciencia Ficción', 'Avengers: Endgame', 'Avengers: Endgame', 2019, 'https://www.youtube.com/watch?v=1XrrTJpA3yM', 'Después de los eventos devastadores de \'Avengers: Infinity War\', el universo está en ruinas debido a las acciones de Thanos, el Titán Loco. Con la ayuda de los aliados que quedaron, los Vengadores deberán reunirse una vez más para intentar deshacer sus acciones y restaurar el orden en el universo de una vez por todas, sin importar cuáles son las consecuencias... Cuarta y última entrega de la saga \"Vengadores\". ', 'img/endgame.jpg'),
 (50, 'Romance', 'La primera cita', 'La primera cita', 2019, 'https://www.youtube.com/watch?v=3S6XzGHdbCk', 'Isabel, que nunca ha recibido muchas muestras de cariño y comprensión de su marido Sebastián, militar prejubilado, sufre un brote de Alzheimer. Empieza entonces a confundir a su esposo con otras personas, y es así, por accidente, que Sebastián descubre la verdad que nunca reconoció sobre su agrio carácter.', 'img/la primera cita.jpg'),
-(51, 'Comedia', 'La pequeña Suiza', 'La pequeña Suiza', 2019, 'https://www.youtube.com/watch?v=3qPsFDNQJGM', 'Narra las peripecias de los habitantes de un imaginario pueblo castellano enclavado en el centro del País Vasco llamado Tellería, que desea, tras 700 años de historia, pasar a ser parte del territorio vasco. Tras la negativa del gobierno, un curioso hallazgo en el santuario del pueblo originará que los osados habitantes de Tellería pidan su anexión, nada menos que a uno de los países más ricos del mundo: Suiza', 'img/la pequeña suiza.jpeg'),
+(51, 'Comedia', 'La pequeña Suiza', 'La pequeña Suiza', 2019, 'https://www.youtube.com/watch?v=3qPsFDNQJGM', 'Narra las peripecias de los habitantes de un imaginario pueblo castellano enclavado en el centro del País Vasco llamado Tellería, que desea, tras 700 años de historia, pasar a ser parte del territorio vasco. Tras la negativa del gobierno, un curioso hallazgo en el santuario del pueblo originará que los osados habitantes de Tellería pidan su anexión, nada menos que a uno de los países más ricos del mundo: Suiza', 'img/la pequenia suiza.jpg'),
 (52, 'Romance', 'Gloria Bell', 'Gloria Bell', 2019, 'https://www.youtube.com/watch?v=Ww6_QxM1b2Y', 'Una divorciada de espíritu libre (Moore) pasa los días trabajando en una oficina. Por la noche se desata bailando en las diferentes discotecas de Los Ángeles. Cuando encuentra a Arnold (Turturro), su vida cambia radicalmente al verse inmersa en un inesperado romance.', 'img/gloria bell.jpg'),
 (53, 'Documental', 'Young Picasso', 'El joven Picasso', 2019, 'https://www.youtube.com/watch?v=L3LW-dZhpCg', 'Demasiado tiempo ignorado, es el momento de mirar a los primeros años de Picasso; la crianza y el aprendizaje que le llevó a sus logros extraordinarios. Tres ciudades juegan un papel clave: Málaga, Barcelona y París. El joven Picasso visita cada uno de ellos y explora su influencia en Picasso, centrándose en obras de arte específicas de estos primeros años. La película explica así cómo este joven artista adquirió su oficio. Mirando detenidamente dos periodos claves: los llamados períodos azul y rosa.', 'img/picasso.jpg'),
 (54, 'infantil', 'Wonder Park', 'Wonder Park', 2019, 'https://www.youtube.com/watch?v=yQiKMgQC1i8', 'June (Brianna Denski) es una niña muy creativa que logra dar con un increíble parque de diversiones plagado de atracciones increíbles y animales parlanchines. El punto es que aunque inicialmente cree que este parque mágico fue abandonado, en realidad proviene de su imaginación y por eso es la única que podrá salvarlo de una gran amenaza. ', 'img/wonder park.jpg'),
@@ -130,7 +130,7 @@ INSERT INTO `peliculas` (`id`, `genero`, `tituloOriginal`, `tituloEsp`, `anioEst
 -- --------------------------------------------------------
 
 --
--- 表的结构 `usuario`
+-- Estructura de tabla para la tabla `usuario`
 --
 
 CREATE TABLE `usuario` (
@@ -146,7 +146,7 @@ CREATE TABLE `usuario` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- 转存表中的数据 `usuario`
+-- Volcado de datos para la tabla `usuario`
 --
 
 INSERT INTO `usuario` (`id`, `nombre`, `apellido`, `dni`, `usuario`, `clave`, `correo`, `nivel`, `estado`) VALUES
@@ -154,48 +154,48 @@ INSERT INTO `usuario` (`id`, `nombre`, `apellido`, `dni`, `usuario`, `clave`, `c
 (4, 'Alejandro', 'Jimenez', '22222222B', 'admin', 'admin', 'prueba2@correo.com', 'admin', 'desbloqueado');
 
 --
--- 转储表的索引
+-- Índices para tablas volcadas
 --
 
 --
--- 表的索引 `opinion`
+-- Indices de la tabla `opinion`
 --
 ALTER TABLE `opinion`
   ADD PRIMARY KEY (`id`);
 
 --
--- 表的索引 `peliculas`
+-- Indices de la tabla `peliculas`
 --
 ALTER TABLE `peliculas`
   ADD PRIMARY KEY (`id`);
 
 --
--- 表的索引 `usuario`
+-- Indices de la tabla `usuario`
 --
 ALTER TABLE `usuario`
   ADD PRIMARY KEY (`id`);
 
 --
--- 在导出的表使用AUTO_INCREMENT
+-- AUTO_INCREMENT de las tablas volcadas
 --
 
 --
--- 使用表AUTO_INCREMENT `opinion`
+-- AUTO_INCREMENT de la tabla `opinion`
 --
 ALTER TABLE `opinion`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
 
 --
--- 使用表AUTO_INCREMENT `peliculas`
+-- AUTO_INCREMENT de la tabla `peliculas`
 --
 ALTER TABLE `peliculas`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=59;
 
 --
--- 使用表AUTO_INCREMENT `usuario`
+-- AUTO_INCREMENT de la tabla `usuario`
 --
 ALTER TABLE `usuario`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
