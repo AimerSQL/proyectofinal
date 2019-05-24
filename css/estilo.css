@@ -32,7 +32,7 @@ nav a{
     color: black !important;
 }
 .navbar{
-     background: rgba(245, 83,83) !important;
+     background: rgb(123, 201, 253) !important;
      z-index: 1;
  }
  .navbar-nav{
