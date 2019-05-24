@@ -12,17 +12,6 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </head>
 <body>
-    <?php 
-        require ('conexion.php');
-        require ('seguridad-global2.php');
-        $mysqli->set_charset("utf8");
-        if($resultado = $mysqli->query("SELECT * FROM peliculas WHERE genero = 'Accion'")){
-          while ($fila = $resultado->fetch_assoc()) {
-               $titulo=$fila['tituloOriginal'];
-               $image=$fila['image'];
-             }
-        }
-    ?>
     <nav class="navbar navbar-dark" id="head">
     <a class="navbar-brand ml-3 tamano" href="acceso-aceptado-user.php">Cinopia</a>
     <div class="float-right">

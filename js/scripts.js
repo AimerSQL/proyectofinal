@@ -17,7 +17,7 @@ $(document).ready(function() {
             current = 0;
         }
         if(current==0){
-            $(".carrusel").animate({"left":50},600);
+            $(".carrusel").animate({"left":0},600);
             return false;
         }
  
@@ -59,7 +59,7 @@ $(document).ready(function() {
             current = current+1;
         } else {
             current = 0;
-            $(".carrusel").animate({"left":50},600);
+            $(".carrusel").animate({"left":0},600);
             return false;
         }
         switch(id){
