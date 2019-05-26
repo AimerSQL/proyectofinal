@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Cinopia</title>
+    <title>Perfil</title>
     <link href="css/estilo.css" rel="stylesheet" type="text/css"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
@@ -17,7 +17,6 @@
     <div class="float-right">
     
         <ul class="navbar-nav">
-        
             <li class="nav-item">
                 <a class="nav-link" id="cerrarSesion">Cerrar sesión</a>
             </li>
@@ -32,29 +31,52 @@ session_start();
 include('conexion.php'); 
 # EXTRAEMOS DATOS DE MYSQL
 $id = $_SESSION['id'];
-if(!isset($id))
-{
+if(!isset($id)){
 echo 'No se ha seleccionado ninguna ID'; 
 }else{
-# EXTRAEMOS DATOS
-$user=$mysqli->query("SELECT usuario, correo, DNI, nivel, nombre, apellido ,puntos FROM usuario WHERE id='$id' ");
-if($user_ok=$user->fetch_assoc() )
-{
-echo 'Nombre: <b>'.$user_ok["usuario"].'</b><br />';
-echo 'Apellido: <b>'.$user_ok["apellido"].'</b><br/>';
-echo 'Corrreo: <b>'.$user_ok["correo"].'</b><br />';
-echo 'DNI: <b>'.$user_ok["DNI"].'</b><br/>';
-echo 'Nivel: <b>'.$user_ok["nivel"].'</b><br/>';
-echo 'Puntos: <b>'.$user_ok["puntos"].'</b><br/>';
-}else{
-echo 'No existe el usuario que buscas';
+    $mysqli->set_charset("utf8");
+    if($resultado = $mysqli->query("SELECT * FROM usuario WHERE id='$id'")){
+      echo '<div class="cajaInfo central">';
+        while ($fila = $resultado->fetch_assoc()) {
+          $id=$fila['id'];
+          $usuario=$fila['usuario'];
+          $nombre = $fila['nombre'];
+          $apellido = $fila['apellido'];
+          $dni = $fila['dni'];
+          $correo = $fila['correo'];
+          $nivel =$fila['nivel'];
+          $puntos = $fila['puntos'];
+          echo '<div id='.$id.'>
+                  <span class="negrita">Nombre: </span>'
+                    .$nombre.'<br>
+                    <span class="negrita">Apellido: </span>'
+                    .$apellido.'<br>
+                    <span class="negrita">DNI: </span>'
+                    .$dni.'<br>
+                    <span class="negrita">Usuario: </span>'
+                    .$usuario.'<br>
+                    <span class="negrita">correo: </span>'
+                    .$correo.'<br>
+                    <span class="negrita">Privilegio: </span>'
+                    .$nivel.'<br>
+                    <span class="negrita">puntos: </span>'
+                    .$puntos.'<br>
+                </div>';
+           }
+           echo '<div class="cajitas">
+               <div id="">Actualizar</div>
+               <div><a href="acceso-aceptado-user.php">Volver</a></div>
+          </div>';
+           echo '</div>';
+    }
 }
-
-} 
 ?>
 
 </section>
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+<script src="js/scripts.js"></script>
 </html>
 
 
