@@ -38,6 +38,7 @@
       <div class="form-group">
       <button class="btn btn-warning btn-sm" id="inisesion">Iniciar sesión</button>
       <button type="button" class="btn btn-warning btn-sm" data-toggle="modal" data-target="#myModal">Registrar</button>
+      <button class="btn btn-warning btn-sm" id="inisesion">Recuperar contraseña</button>
       </div>
       
 
