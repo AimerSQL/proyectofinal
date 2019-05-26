@@ -32,8 +32,10 @@
 
     <section class="main-primero">
         <?php
+        session_start();
         $id = $_GET['id'];
         echo '<input type="hidden" id="peliId" value="'.$id.'">';
+        echo '<input type="hidden" id="usuId" value="'.$_SESSION['id'].'">';
         require ('conexion.php');
         require ('seguridad-global2.php');
         $mysqli->set_charset("utf8");
@@ -50,46 +52,42 @@
             echo '<div class="cajaInfo"><h3>'.$tituloEsp.'</h3>';
             echo '<p><span class="negrita">Fecha de estreno: </span>'.$anio.'</p>';
             echo '<p><span class="negrita">Sinopsis: </span>'.$sinopsis.'</p>';
-            echo '<div class="cajitas"><div data-toggle="modal" data-target="#myModal">Quiero ver</div><div><a href="#comentario">Añadir opinión</a></div><div><a target="_blank" href="'.$trailer.'">Trailer</a></div><div><a href="acceso-aceptado-user.php">Volver</a></div></div>';
+            echo '<div class="cajitas"><div data-toggle="modal" data-target="#myModal">Cupones</div><div><a href="#comentario">Añadir opinión</a></div><div><a target="_blank" href="'.$trailer.'">Trailer</a></div><div><a href="acceso-aceptado-user.php">Volver</a></div></div>';
             echo '</div>';
         }
+        
         ?>
-          <!-- The Modal -->
+          <!--Modal CODIGO TICKET -->
   <div class="modal fade" id="myModal">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
       
         <!-- Modal Header -->
         <div class="modal-header">
-          <h4 class="modal-title">Registro</h4>
+          <h4 class="modal-title">Consigue su cupon de descuento</h4>
           <button type="button" class="close" data-dismiss="modal">&times;</button>
         </div>
         
         <!-- Modal body -->
         <div class="modal-body">
          <div class="form-group">
-            <label for="">Nombre: </label>
-            <input type="text" placeholder="Escribe tu nombre aquí" class="form-control" id="nombre" style="width: 100%;" display: inline-block !important;>
-            <label for="">Apellido: </label>
-            <input type="text" placeholder="Escribe tu apellido aquí" class="form-control" id="apellido" style="width: 100%;" display: inline-block !important;>
-            <label for="">DNI: </label>
-            <input type="text" placeholder="Escribe tu DNI aquí" class="form-control" id="dni" style="width: 100%;" display: inline-block !important;>
-            <label for="">Usuario: </label>
-            <input type="text" placeholder="Escribe tu usuario aquí" class="form-control" id="usuarioR" style="width: 100%;" display: inline-block !important;>
-            <label for="">Contraseña: </label>
-            <input type="password" placeholder="Escribe tu contraseña aquí" class="form-control" id="contrasena" style="width: 100%;" display: inline-block !important;>
-            <label for="">Correo: </label>
-            <input type="text" placeholder="Escribe tu correo aquí" class="form-control" id="correo" style="width: 100%;" display: inline-block !important;>
+            <label for="">Código de ticket: </label>
+            <input type="text" placeholder="" class="form-control" id="codigo" style="width: 100%;" display: inline-block !important; required>
          </div>
         </div>
         
         <!-- Modal footer -->
         <div class="modal-footer">
-          <button type="button" id="enviar" class="btn btn-primary" data-dismiss="modal">Enviar</button>
+          <button type="button" id="enviarCodigo" class="btn btn-primary" data-dismiss="modal">Enviar</button>
         </div>
         
       </div>
     </div>
+  </div>
+
+  <div class="cajaDescuento hide">
+    <div id="descuento">&nbsp;</div>
+    <div class="cerrar btn-warning" id="cerrarModal">Aceptar</div>
   </div>
     </section>
     <section class="comentario">
@@ -117,7 +115,9 @@
             ?>
         
     </section>
-  
+  <?php
+    
+  ?>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.2.1.js"></script>

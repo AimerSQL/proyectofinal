@@ -272,7 +272,39 @@ h4{
 .hide{
     display: none;
 }
-
+.cajaDescuento{
+    position: fixed;
+    width: 300px;
+    height: 250px;
+    background: rgb(83, 172, 245);
+    text-align: center;
+    z-index: 2;
+    margin: 0 auto;
+    opacity: 0.9;
+    border-radius: .2rem;
+}
+#descuento{
+    color:red;
+    font-size: 3rem;
+}
+.cerrar{
+    position: relative;
+    top: 50px;
+    width: 20%;
+    margin: 0 auto;
+    border: 1px solid #e0a800;
+    color: #212529;
+    cursor: pointer;
+    font-size: .85rem;
+    border-radius: .2rem;
+}
+.cerrar:hover {
+    background-color: #e0a800;
+    border-color: #d39e00;
+}
+.form-group>button{
+    margin-bottom: 5px;
+}
 @media all and (max-width:700px){
     .main-primero{
         margin-top:195px;    

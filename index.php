@@ -38,10 +38,42 @@
       <div class="form-group">
       <button class="btn btn-warning btn-sm" id="inisesion">Iniciar sesión</button>
       <button type="button" class="btn btn-warning btn-sm" data-toggle="modal" data-target="#myModal">Registrar</button>
+      <button class="btn btn-warning btn-sm" data-toggle="modal" data-target="#recuperarCont">Recuperar Contraseña</button>  
       </div>
       
 
-  <!-- The Modal -->
+    <!-- MODAL RECUPERAR CONTRASEÑA -->
+  <div class="modal fade" id="recuperarCont">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Recuperar Contraseña</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+         <div class="form-group">
+            <label for="">DNI: </label>
+            <input type="text" placeholder="Escribe tu DNI aquí" class="form-control" id="dniR" style="width: 100%;" display: inline-block !important;>
+            <label for="">Correo: </label>
+            <input type="text" placeholder="Escribe tu correo aquí" class="form-control" id="correoR" style="width: 100%;" display: inline-block !important;>
+         </div>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" id="enviarContrasena" class="btn btn-primary" data-dismiss="modal">Enviar</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+
+  <!-- MODAL REGISTRO -->
   <div class="modal fade" id="myModal">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
@@ -78,6 +110,9 @@
       </div>
     </div>
   </div>
+
+  
+
       <div id="resultado" class="text-danger">&nbsp;</div>
    </div>
  </div>   

@@ -230,6 +230,47 @@ $("#perfil").click(function(){
     })
 })
 
+/*generar descuento*/
+$("#enviarCodigo").click(function(){
+    if($("#codigo").val()==""){
+        alert("introduzca su codigo de ticket");
+    }else{
+        const descuento = Math.floor(Math.random() * (9- 1) + 1);
+        $("#descuento").text(descuento*10 + "% De Descuento");
+        $(".cajaDescuento").removeClass("hide");
+        $("#codigo").val("");
+        const tipo = descuento*10+"%";
+        $.ajax({
+            type: "POST",
+            url: "insertarCupon.php",
+            data:{
+                tipo: tipo,
+                usuId: $("#usuID").val(),
+                peliId: $("#peliId").val()
+            }
+        });
+    }
+    
+});
 
+$("#cerrarModal").click(function(){
+    $(".cajaDescuento").addClass("hide");
+});
+
+
+$("#enviarContrasena").click(function(){
+    if($("#dniR").val()==""||$("#correoR").val()==""){
+        alert("introduzca su DNI y correo");
+    }else{
+        $.ajax({
+            type: "POST",
+            url: "recuperar.php",
+            data: {
+                dni: $("#dniR").val(),
+                correo: $("#correoR").val()
+            }
+        });
+    }
+});
 });
 
