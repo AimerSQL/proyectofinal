@@ -15,14 +15,7 @@
     <nav class="navbar navbar-dark" id="head">
     <a class="navbar-brand ml-3 tamano" href="#">Cinopia</a>
     <div class="float-right">
-    <form class="form-inline mr-3">
-        <input class="form-control mr-sm-1 mb-1 mt-1" type="text" placeholder="buscar">
-        <button class="btn btn-sm  btn-warning" type="button">Search</button>
-    </form>
     <ul class="navbar-nav">
-        <li class="nav-item">
-            <a class="nav-link">Perfil</a>
-        </li>
         <li class="nav-item">
             <a class="nav-link" id="cerrarSesion">Cerrar sesión</a>
         </li>
