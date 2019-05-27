@@ -60,6 +60,19 @@ echo 'No se ha seleccionado ninguna ID';
                     <input type="text" id="clave" value="'.$nivel.'">
                 </div>';
            }
+           if($resultado = $mysqli->query("SELECT * FROM cupones WHERE usuId='$id'")){
+            echo 'Tus cupones:<br>' ;
+            while ($fila = $resultado->fetch_assoc()) {
+                $tipo = $fila['tipo'];
+                $peliId = $fila['peliId'];
+               
+                $resultado2 = $mysqli->query("SELECT * FROM peliculas WHERE id='$peliId'");
+                while ($fila2 = $resultado2->fetch_assoc()) {
+                    $nombre = $fila2['tituloOriginal'];
+                    echo $tipo.' : '.$nombre.'<br>';
+                }
+            }
+           }
            echo '<div class="cajitas">
                <div id="actualizar">Actualizar</div>
                <div><a href="acceso-aceptado-user.php">Volver</a></div>
