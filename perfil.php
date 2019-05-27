@@ -45,7 +45,6 @@ echo 'No se ha seleccionado ninguna ID';
           $dni = $fila['dni'];
           $correo = $fila['correo'];
           $nivel =$fila['nivel'];
-          $puntos = $fila['puntos'];
           echo '<div id='.$id.'>
                   <span class="negrita">Nombre: </span>'
                     .$nombre.'<br>
