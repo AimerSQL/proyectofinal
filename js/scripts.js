@@ -189,7 +189,7 @@ $(document).ready(function(){
             alert(msg);
         });
     });
-
+/* SUBIR PELICULA */
     $("#subirPeli").click(function(){
         const src = $("#imagen").val();
         let img = src.split('\\');
@@ -235,6 +235,8 @@ $("#perfil").click(function(){
 $("#enviarCodigo").click(function(){
     if($("#codigo").val()==""){
         alert("introduzca su codigo de ticket");
+    }else if($("#codigo").length<9){
+        alert("código no válido");
     }else{
         const descuento = Math.floor(Math.random() * (9- 1) + 1);
         $("#descuento").text(descuento*10 + "% De Descuento");

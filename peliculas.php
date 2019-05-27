@@ -72,7 +72,7 @@
         <div class="modal-body">
          <div class="form-group">
             <label for="">Código de ticket: </label>
-            <input type="text" placeholder="" class="form-control" id="codigo" style="width: 100%;" display: inline-block !important; required>
+            <input type="text" placeholder="" class="form-control" id="codigo" style="width: 100%;" display: inline-block !important; maxlength="9" required>
          </div>
         </div>
         
