@@ -126,13 +126,14 @@ $(document).ready(function(){
             contrasena: $("#contrasena").val(),
             correo: $("#correo").val()
             }
-        }).done(function(){
-            $("#nombre").val() = "";
-            $("#apellido").val() = "";
-            $("#dni").val() = "";
-            $("#usuarioR").val() = ""
-            $("#contrasena").val() = "";
-            $("#correo").val() = "";
+        }).done(function(msg){
+            $("#nombre").val("");
+            $("#apellido").val("");
+            $("#dni").val("");
+            $("#usuarioR").val("");
+            $("#contrasena").val("");
+            $("#correo").val("");
+            alert(msg);
         });
     });
 
