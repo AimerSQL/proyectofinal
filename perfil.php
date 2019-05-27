@@ -58,8 +58,6 @@ echo 'No se ha seleccionado ninguna ID';
                     .$correo.'<br>
                     <span class="negrita">Privilegio: </span>'
                     .$nivel.'<br>
-                    <span class="negrita">puntos: </span>'
-                    .$puntos.'<br>
                 </div>';
            }
            echo '<div class="cajitas">
