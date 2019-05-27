@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 24-05-2019 a las 09:52:08
+-- Tiempo de generación: 27-05-2019 a las 13:20:45
 -- Versión del servidor: 10.1.38-MariaDB
 -- Versión de PHP: 7.3.3
 
@@ -21,6 +21,28 @@ SET time_zone = "+00:00";
 --
 -- Base de datos: `cinopia`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `cupones`
+--
+
+CREATE TABLE `cupones` (
+  `id` int(11) NOT NULL,
+  `tipo` varchar(10) NOT NULL,
+  `usuId` int(11) DEFAULT NULL,
+  `peliId` int(11) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Volcado de datos para la tabla `cupones`
+--
+
+INSERT INTO `cupones` (`id`, `tipo`, `usuId`, `peliId`) VALUES
+(1, '10%', 3, 22),
+(2, '50%', 3, 22),
+(3, '40%', 3, 2);
 
 -- --------------------------------------------------------
 
@@ -158,6 +180,12 @@ INSERT INTO `usuario` (`id`, `nombre`, `apellido`, `dni`, `usuario`, `clave`, `c
 --
 
 --
+-- Indices de la tabla `cupones`
+--
+ALTER TABLE `cupones`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indices de la tabla `opinion`
 --
 ALTER TABLE `opinion`
@@ -180,6 +208,12 @@ ALTER TABLE `usuario`
 --
 
 --
+-- AUTO_INCREMENT de la tabla `cupones`
+--
+ALTER TABLE `cupones`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+--
 -- AUTO_INCREMENT de la tabla `opinion`
 --
 ALTER TABLE `opinion`
@@ -195,7 +229,7 @@ ALTER TABLE `peliculas`
 -- AUTO_INCREMENT de la tabla `usuario`
 --
 ALTER TABLE `usuario`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

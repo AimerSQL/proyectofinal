@@ -235,7 +235,7 @@ $("#perfil").click(function(){
 $("#enviarCodigo").click(function(){
     if($("#codigo").val()==""){
         alert("introduzca su codigo de ticket");
-    }else if($("#codigo").length<9){
+    }else if($("#codigo").val().length<9){
         alert("código no válido");
     }else{
         const descuento = Math.floor(Math.random() * (9- 1) + 1);
