@@ -21,7 +21,7 @@
         </form>
         <ul class="navbar-nav">
             <li class="nav-item">
-                <a class="nav-link">Perfil</a>
+                <a class="nav-link" id="perfil">Perfil</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" id="cerrarSesion">Cerrar sesión</a>
@@ -49,7 +49,7 @@
             $image = $fila['image'];
             echo '<div class="contenedorInfo">';
             echo '<div class="cajaImage" id="'.$id.'"><img src="'.$image.'"></div>';
-            echo '<div class="cajaInfo"><h3>'.$tituloEsp.'</h3>';
+            echo '<div class="cajaInfoPeli"><h3>'.$tituloEsp.'</h3>';
             echo '<p><span class="negrita">Fecha de estreno: </span>'.$anio.'</p>';
             echo '<p><span class="negrita">Sinopsis: </span>'.$sinopsis.'</p>';
             echo '<div class="cajitas"><div data-toggle="modal" data-target="#myModal">Cupones</div><div><a href="#comentario">Añadir opinión</a></div><div><a target="_blank" href="'.$trailer.'">Trailer</a></div><div><a href="acceso-aceptado-user.php">Volver</a></div></div>';

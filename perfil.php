@@ -45,26 +45,23 @@ echo 'No se ha seleccionado ninguna ID';
           $dni = $fila['dni'];
           $correo = $fila['correo'];
           $nivel =$fila['nivel'];
-          $puntos = $fila['puntos'];
-          echo '<div id='.$id.'>
-                  <span class="negrita">Nombre: </span>'
-                    .$nombre.'<br>
-                    <span class="negrita">Apellido: </span>'
-                    .$apellido.'<br>
-                    <span class="negrita">DNI: </span>'
-                    .$dni.'<br>
-                    <span class="negrita">Usuario: </span>'
-                    .$usuario.'<br>
-                    <span class="negrita">correo: </span>'
-                    .$correo.'<br>
-                    <span class="negrita">Privilegio: </span>'
-                    .$nivel.'<br>
-                    <span class="negrita">puntos: </span>'
-                    .$puntos.'<br>
+          echo '<div id="cajaPerfil">
+                    <label><span class="negrita">Nombre: </span></label>
+                    <input type="text" id="nombre" value="'.$nombre.'"><br>
+                    <label><span class="negrita">Apellido: </span></label>
+                    <input type="text" id="apellido" value="'.$apellido.'"><br>
+                    <label><span class="negrita">DNI: </span></label>
+                    <input type="text" id="dni" value="'.$dni.'"><br>
+                    <label><span class="negrita">Usuario: </span></label>
+                    <input type="text" id="usuario" value="'.$usuario.'"><br>
+                    <label><span class="negrita">Correo: </span></label>
+                    <input type="text" id="correo" value="'.$correo.'"><br>
+                    <label><span class="negrita">Clave: </span></label>
+                    <input type="text" id="clave" value="'.$nivel.'">
                 </div>';
            }
            echo '<div class="cajitas">
-               <div id="">Actualizar</div>
+               <div id="actualizar">Actualizar</div>
                <div><a href="acceso-aceptado-user.php">Volver</a></div>
           </div>';
            echo '</div>';

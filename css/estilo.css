@@ -147,9 +147,16 @@ ul a{
 .negrita{
     font-weight: bold;
 }
-.cajaInfo{
+.cajaInfoPeli{
     text-align: left;
     width: 500px;
+    /*border: 1px solid black;*/
+    margin-left: 20px;
+    margin-bottom: 40px;
+}
+.cajaInfo{
+    text-align: left;
+    width: 300px;
     /*border: 1px solid black;*/
     margin-left: 20px;
     margin-bottom: 40px;
@@ -305,6 +312,23 @@ h4{
 }
 .form-group>button{
     margin-bottom: 5px;
+}
+#cajaPerfil>input{
+    border: none;
+    float: right;
+    
+}
+#cajaPerfil>span{
+    display: block;
+    width: 100px;
+    float: left;
+}
+#cajaPerfil>p{
+    display: block;
+    width: 100px;
+    text-align: justify;
+    float: left;
+    margin-left: 20px;
 }
 @media all and (max-width:700px){
     .main-primero{

@@ -260,7 +260,7 @@ $("#cerrarModal").click(function(){
     $(".cajaDescuento").addClass("hide");
 });
 
-
+/*recuperar contraseña */
 $("#enviarContrasena").click(function(){
     if($("#dniR").val()==""||$("#correoR").val()==""){
         alert("introduzca su DNI y correo");
@@ -275,5 +275,20 @@ $("#enviarContrasena").click(function(){
         });
     }
 });
+
+$("#actualizar").click(function(){
+    $.ajax({
+        type: "POST",
+        url: "actualizarPerfil.php",
+        data:{
+            usuario: $("#usuario").val(),
+            correo: $("#correo").val(),
+            clave: $("#clave").val()
+        }
+    }).done(function(msg){
+        alert(msg);
+    });
+});
+
 });
 

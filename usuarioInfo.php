@@ -46,19 +46,19 @@
               $dni = $fila['dni'];
               $correo = $fila['correo'];
               $nivel =$fila['nivel'];
-              echo '<div id='.$id.'>
-                      <span class="negrita">Nombre: </span>'
-                        .$nombre.'<br>
-                        <span class="negrita">Apellido: </span>'
-                        .$apellido.'<br>
-                        <span class="negrita">DNI: </span>'
-                        .$dni.'<br>
-                        <span class="negrita">Usuario: </span>'
-                        .$usuario.'<br>
-                        <span class="negrita">correo: </span>'
-                        .$correo.'<br>
-                        <span class="negrita">Privilegio: </span>'
-                        .$nivel.'<br>
+              echo '<div id="cajaPerfil">
+                      <span class="negrita">Nombre: </span><p>'
+                        .$nombre.'</p><br>
+                        <span class="negrita">Apellido: </span><p>'
+                        .$apellido.'</p><br>
+                        <span class="negrita">DNI: </span><p>'
+                        .$dni.'</p><br>
+                        <span class="negrita">Usuario: </span><p>'
+                        .$usuario.'</p><br>
+                        <span class="negrita">correo: </span><p>'
+                        .$correo.'</p><br>
+                        <span class="negrita">Privilegio: </span><p>'
+                        .$nivel.'</p><br>
                     </div>';
                }
           echo '<div class="cajitas">
