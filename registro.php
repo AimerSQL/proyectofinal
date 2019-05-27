@@ -7,7 +7,7 @@
     $correo = $_POST['correo'];
     require ('conexion.php');
     $mysqli->set_charset("utf8");
-    if($mysqli->query("INSERT INTO usuario (nombre,apellido,dni,usuario,clave,correo,nivel) VALUES('$nombre','$apellido','$dni','$usuario','$contrasena','$correo',2);")){
+    if($mysqli->query("INSERT INTO usuario (nombre,apellido,dni,usuario,clave,correo,nivel) VALUES('$nombre','$apellido','$dni','$usuario','$contrasena','$correo','user');")){
 
     }
     $mysqli->close();

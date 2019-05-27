@@ -32,7 +32,7 @@
 
       <div class="form-group">
       <label for="">Contraseña</label>
-      <input type="text" placeholder="Escribe tu contraseña" class="form-control" id="clave" style="width: 100%;" display: inline-block !important;>
+      <input type="password" placeholder="Escribe tu contraseña" class="form-control" id="clave" style="width: 100%;" display: inline-block !important;>
       </div>
 
       <div class="form-group">
