@@ -88,11 +88,12 @@ ul a{
     position:relative;
     margin-top:20px;
     margin-bottom:20px;
+    margin-left: 60px;
 }
  
 #carrusel .left-arrow {
     position:absolute;
-    left:10px;
+    left: -40px;
     z-index:1;
     top:40%;
     margin-top:-9px;
